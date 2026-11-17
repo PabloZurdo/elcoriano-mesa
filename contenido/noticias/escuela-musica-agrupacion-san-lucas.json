@@ -1,0 +1,43 @@
+{
+ "estado": "publicada",
+ "orden": 3,
+ "id": "escuela-musica-agrupacion-san-lucas",
+ "sec": "cultura",
+ "kicker": "Escuela de música",
+ "iso": "2026-10-23",
+ "src": "El Coriano",
+ "fuente_url": "https://www.youtube.com/watch?v=RUN8tV_OkS8",
+ "firma": "Redacción El Coriano",
+ "elaboracion": "ia",
+ "title": "La escuela de la Agrupación San Lucas de Coria forma a unos diez alumnos",
+ "sub": "La banda ofrece clases de viento metal y percusión a niños y adultos, sin necesidad de comprar el instrumento",
+ "caption": "Imagen de archivo. Imagen de recurso.",
+ "foto": "generica-cultura.jpg",
+ "fotocredito": "Archivo El Coriano",
+ "claves": [
+  "La escuela de la Agrupación San Lucas de Coria del Río tiene cerca de diez alumnos en sus clases.",
+  "La banda presta el instrumento y el traje a quien empieza, y las edades van desde los cinco hasta los cuarenta años.",
+  "Los ensayos son los lunes, miércoles y jueves, y se puede acudir a cualquier día de ensayo."
+ ],
+ "body": [
+  "La escuela de la Agrupación San Lucas, vinculada a la parroquia de Santa María de la Estrella, forma a los jóvenes y adultos que tocan en los actos de la localidad. Tiene cerca de diez alumnos, tanto principiantes como componentes de la banda que quieren mejorar su sonido.",
+  "El Coriano visitó la sede después de la Romería de San Lucas, en la que la agrupación acompañó al patrón. Por la escuela pasan personas de cinco a cuarenta años.",
+  "## Clases y niveles",
+  "Quienes empiezan de cero tienen una media hora de clase propia para aprender lo básico. Quienes ya tocan y quieren perfeccionarse se agrupan por nivel, hacen ejercicios conjuntos y tocan en grupos pequeños de dos o tres personas.",
+  "Los instrumentos que se enseñan son de viento metal y de percusión: cornetas, trompetas, bombardinos, trombones, tubas, tambor y bombo y plato. La banda proporciona el instrumento y el traje, por lo que no es necesario comprar nada para empezar.",
+  "<span class='howto'>Cómo apuntarse: pasar por la sede de la banda en cualquier día de ensayo o hablar con la directiva. Los miércoles hay personal en la sede toda la tarde. Los ensayos son los lunes, miércoles y jueves.</span>"
+ ],
+ "seo": {
+  "slug": "escuela-musica-agrupacion-san-lucas-coria",
+  "titulo": "Escuela de música de la Agrupación San Lucas, en Coria",
+  "descripcion": "La escuela de la Agrupación San Lucas de Coria del Río forma a unos diez alumnos, con instrumentos y traje prestados por la banda.",
+  "etiquetas": [
+   "Coria del Río",
+   "Agrupación San Lucas",
+   "escuela de música",
+   "banda de música",
+   "clases de viento",
+   "Coria del Río cultura"
+  ]
+ }
+}

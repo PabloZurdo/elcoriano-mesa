@@ -1,0 +1,45 @@
+{
+ "estado": "publicada",
+ "orden": 1,
+ "id": "campeonato-espana-caballos-jovenes-doma-vaquera",
+ "sec": "deportes",
+ "kicker": "Doma vaquera",
+ "iso": "2026-10-23",
+ "src": "Ayuntamiento de Coria del Río",
+ "fuente_url": "https://www.ayto-coriadelrio.es/es/actualidad/noticias/Coria-del-Rio-reune-este-fin-de-semana-a-la-elite-de-la-doma-vaquera-con-el-Campeonato-de-Espana-de-Caballos-Jovenes/",
+ "firma": "Redacción El Coriano",
+ "elaboracion": "ia",
+ "title": "Coria del Río acoge el Campeonato de España de Caballos Jóvenes de doma vaquera",
+ "sub": "La prueba se celebra el sábado 24 y el domingo 25 de octubre en el solar municipal de Pueblo Andaluz y está dedicada a Joaquín Olivera Peña",
+ "caption": "Imagen de archivo. Imagen de recurso.",
+ "foto": "generica-deportes.jpg",
+ "fotocredito": "Archivo El Coriano",
+ "claves": [
+  "El Campeonato de España de Caballos Jóvenes de doma vaquera se celebra el sábado 24 y el domingo 25 de octubre en Coria del Río.",
+  "La prueba está dedicada a Joaquín Olivera Peña y la organiza Francisco Antonio Ortega, Tono.",
+  "El Ayuntamiento colocará el rótulo del parque Joaquín Olivera Peña en el callejero coincidiendo con el campeonato.",
+  "El acceso a la competición depende del proceso de clasificación de la Real Federación Hípica Española."
+ ],
+ "body": [
+  "Coria del Río acoge el sábado 24 y el domingo 25 de octubre el Campeonato de España de Caballos Jóvenes de doma vaquera, una prueba de ámbito nacional dedicada a Joaquín Olivera Peña, figura de la disciplina.",
+  "La programación empieza a primera hora del sábado en el solar municipal de Pueblo Andaluz, entre el río Pudio y la Blanca Paloma. La competición valora la formación, la técnica, la precisión y la compenetración entre jinete y caballo. Para participar hay que superar el proceso de clasificación de la Real Federación Hípica Española.",
+  "La presentación oficial se hizo el miércoles 21 de octubre en el Salón de Plenos. Participaron el alcalde, Modesto González; Francisco Antonio Ortega, Tono, organizador de la prueba; la gerente general de la Federación Andaluza, Pilar Fernández, y el jinete local José Manuel Martín.",
+  "## Un parque con el nombre de Joaquín Olivera",
+  "Coincidiendo con el campeonato, el Ayuntamiento colocará el rótulo que incorpora al callejero el parque Joaquín Olivera Peña. «Es necesario apostar por esta disciplina y por el mundo ecuestre en general», señaló el alcalde, que destacó el arraigo del caballo en el municipio, tanto en la afición como en el tejido empresarial.",
+  "Según la nota municipal, el Ayuntamiento quiere seguir acogiendo pruebas como esta para dinamizar la actividad local y proyectar el nombre de Coria en el panorama nacional de la doma vaquera.",
+  "<span class='howto'>Dónde y cuándo: solar municipal de Pueblo Andaluz, entre el río Pudio y la Blanca Paloma, sábado 24 y domingo 25 de octubre. La programación empieza el sábado a primera hora. El acceso a la competición depende de la clasificación de la Real Federación Hípica Española.</span>"
+ ],
+ "seo": {
+  "slug": "campeonato-espana-caballos-jovenes-doma-vaquera-coria-del-rio",
+  "titulo": "Campeonato de España de doma vaquera en Coria del Río",
+  "descripcion": "Coria del Río acoge el 24 y 25 de octubre el Campeonato de España de Caballos Jóvenes de doma vaquera, dedicado a Joaquín Olivera Peña.",
+  "etiquetas": [
+   "doma vaquera",
+   "Coria del Río",
+   "Campeonato de España",
+   "caballos jóvenes",
+   "Joaquín Olivera Peña",
+   "Real Federación Hípica Española"
+  ]
+ }
+}

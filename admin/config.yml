@@ -1,0 +1,102 @@
+# Panel de redacción de El Coriano (prototipo)
+backend:
+  name: github
+  repo: PabloZurdo/elcoriano-mesa
+  branch: main
+  commit_messages:
+    create: "Nueva noticia: {{slug}}"
+    update: "Edita noticia: {{slug}}"
+    delete: "Borra noticia: {{slug}}"
+    uploadMedia: "Sube foto: {{path}}"
+    deleteMedia: "Borra foto: {{path}}"
+
+locale: es
+site_url: https://elcoriano.es
+display_url: https://elcoriano.es
+logo_url: /elcoriano-mesa/apple-touch-icon.png
+media_folder: fotos
+public_folder: /fotos
+
+collections:
+  - name: noticias
+    label: Noticias
+    label_singular: Noticia
+    folder: contenido/noticias
+    format: json
+    extension: json
+    create: true
+    delete: true
+    identifier_field: title
+    slug: "{{fields.id}}"
+    summary: "{{iso}} · {{estado}} · {{orden}} · {{title}}"
+    sortable_fields: [iso, title, estado, sec]
+    view_filters:
+      - { label: "Borradores", field: estado, pattern: borrador }
+      - { label: "Publicadas", field: estado, pattern: publicada }
+      - { label: "Hechas con IA sin revisar", field: elaboracion, pattern: "^ia$" }
+    fields:
+      - { name: estado, label: "Estado", widget: select, default: borrador,
+          options: [ { label: "Borrador (no sale en la web)", value: borrador }, { label: "Publicada", value: publicada } ] }
+      - { name: orden, label: "Orden en la portada del día (1 = apertura)", widget: number, value_type: int, required: false, default: 5 }
+      - { name: title, label: "Titular", widget: string }
+      - { name: sub, label: "Subtítulo", widget: text }
+      - { name: id, label: "Identificador (sin espacios ni tildes; no cambiar tras publicar)", widget: string,
+          pattern: ["^[a-z0-9-]+$", "Solo minúsculas, números y guiones"] }
+      - { name: sec, label: "Sección", widget: select,
+          options: [coria, sucesos, politica, economia, cultura, hermandades, deportes, rio, opinion] }
+      - { name: kicker, label: "Antetítulo", widget: string, required: false }
+      - { name: iso, label: "Fecha (AAAA-MM-DD)", widget: string, pattern: ["^\\d{4}-\\d{2}-\\d{2}$", "Formato AAAA-MM-DD"] }
+      - { name: hora, label: "Hora de actualización (HH:MM)", widget: string, required: false }
+      - { name: firma, label: "Firma", widget: string, default: "Redacción El Coriano" }
+      - { name: elaboracion, label: "Elaboración (etiqueta de IA)", widget: select, default: redaccion,
+          options: [ { label: "Hecha con IA", value: ia }, { label: "IA revisada por un periodista", value: ia_revisada }, { label: "Redacción (sin etiqueta)", value: redaccion } ] }
+      - { name: foto, label: "Foto", widget: image, required: false }
+      - { name: caption, label: "Pie de foto", widget: string, required: false }
+      - { name: fotocredito, label: "Crédito de la foto", widget: string, required: false }
+      - { name: encuadre, label: "Encuadre de la foto (contain para carteles, o p. ej. center 22%)", widget: string, required: false }
+      - { name: claves, label: "Claves (2 a 4 frases)", widget: list, field: { name: frase, label: "Frase", widget: text } }
+      - { name: body, label: "Cuerpo (un párrafo por elemento; '## ' al inicio = ladillo)", widget: list,
+          field: { name: parrafo, label: "Párrafo", widget: text } }
+      - { name: src, label: "Fuente", widget: string, required: false }
+      - { name: fuente_url, label: "Enlace a la fuente", widget: string, required: false }
+      - { name: peso, label: "Columnas si va de apertura (solo dirección)", widget: select, required: false, options: ["2", "3", "4"] }
+      - { name: rel, label: "Relacionadas (identificadores)", widget: list, required: false }
+      - { name: autor, label: "Autor (solo opinión)", widget: string, required: false }
+      - { name: autor_cargo, label: "Cargo del autor (solo opinión)", widget: string, required: false }
+      - { name: ficticia, label: "Opinión de prueba (ficticia)", widget: boolean, required: false, default: false }
+      - name: ultima_hora
+        label: "Cintillo de última hora (solo apertura a 4 columnas)"
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { name: hora, label: "Hora", widget: string, required: false }
+          - { name: texto, label: "Texto", widget: string, required: false }
+      - name: seo
+        label: SEO
+        widget: object
+        collapsed: true
+        required: false
+        fields:
+          - { name: slug, label: "Slug", widget: string, required: false }
+          - { name: titulo, label: "Título SEO (máx. 60)", widget: string, required: false }
+          - { name: descripcion, label: "Descripción (140-155)", widget: text, required: false }
+          - { name: etiquetas, label: "Etiquetas", widget: list, required: false }
+
+  - name: portada
+    label: Agenda
+    files:
+      - name: agenda
+        label: Agenda
+        file: contenido/agenda.json
+        format: json
+        fields:
+          - name: agenda
+            label: Citas
+            widget: list
+            summary: "{{cuando}} · {{que}}"
+            fields:
+              - { name: cuando, label: "Cuándo (texto)", widget: string }
+              - { name: que, label: "Qué", widget: string }
+              - { name: donde, label: "Dónde", widget: string, required: false }
+              - { name: hasta, label: "Fecha fin (AAAA-MM-DD, para quitarla sola)", widget: string, required: false }

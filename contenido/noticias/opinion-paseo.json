@@ -1,0 +1,41 @@
+{
+ "estado": "publicada",
+ "orden": 1,
+ "id": "opinion-paseo",
+ "sec": "opinion",
+ "kicker": "Tribuna",
+ "iso": "2026-10-10",
+ "autor": "Lucía Orilla Martín",
+ "autor_cargo": "Vecina de Coria del Río y profesora jubilada (firma ficticia)",
+ "ficticia": true,
+ "firma": "Lucía Orilla Martín",
+ "elaboracion": "ia",
+ "title": "El río no es un decorado",
+ "sub": "Renovar el Paseo Marítimo está bien. Pensar qué queremos hacer junto al Guadalquivir el resto del año, mejor",
+ "caption": "El Guadalquivir a su paso por Coria del Río.",
+ "foto": "generica-rio.jpg",
+ "fotocredito": "Archivo El Coriano",
+ "body": [
+  "Cada vez que en Coria se habla del río se habla del paseo. Es lógico: es donde paseamos, donde nos sentamos y donde montamos la Feria. Que por fin se cambie la solería y esa balaustrada que se caía a trozos es una buena noticia, y hay que reconocer al Ayuntamiento que haya pagado de su bolsillo una obra que durante años no quiso hacer quien era dueño del terreno.",
+  "Pero el paseo es la orilla, no el río. Y el río, durante once meses al año, apenas entra en nuestra vida. Lo miramos el día de las cucañas, el día que pasan las hermandades camino del Rocío y la noche de las linternas japonesas. El resto del tiempo es un fondo bonito para las fotos.",
+  "## Lo que el río fue",
+  "No siempre fue así. Generaciones de corianos vivieron de pescar, de cruzar a la otra orilla, de construir y reparar barcas. Algo queda: la barca sigue cruzando, todavía hay quien pesca y la carpintería de ribera conserva sus paredes, ahora con murales. Es poco para un pueblo que lleva el río en el nombre.",
+  "Me gustaría que, además de nuevas barandillas, se hablara de un embarcadero que sirva para algo más que para mirar, de clubes de remo y piragua con instalaciones dignas, de rutas por el estuario y de una escuela de oficios del río antes de que se jubile el último que los sabe.",
+  "## Una pregunta para la campaña",
+  "Dentro de unos meses habrá elecciones municipales y todos los partidos se acordarán del Guadalquivir. Les pediría una cosa: que no lo traten como un decorado. Que digan qué piensan hacer con él, cuánto cuesta y quién lo paga.",
+  "El paseo estará listo, si todo va bien, en primavera. Ojalá para entonces sepamos también qué queremos que pase al otro lado de la barandilla.",
+  "<span class='howto'><b>Texto de prueba.</b> Esta columna se ha escrito para probar la sección de Opinión de El Coriano. La firma es ficticia y no corresponde a ninguna persona real.</span>"
+ ],
+ "seo": {
+  "slug": "opinion-rio-guadalquivir-paseo-maritimo-coria",
+  "titulo": "El río no es un decorado | Opinión",
+  "descripcion": "Tribuna de opinión de prueba sobre la renovación del Paseo Marítimo de Coria del Río y el papel del Guadalquivir en la vida del pueblo. Firma ficticia.",
+  "etiquetas": [
+   "opinión",
+   "Guadalquivir",
+   "Paseo Marítimo",
+   "Coria del Río",
+   "tribuna"
+  ]
+ }
+}

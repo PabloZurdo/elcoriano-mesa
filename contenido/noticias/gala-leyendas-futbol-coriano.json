@@ -1,0 +1,45 @@
+{
+ "estado": "publicada",
+ "orden": 3,
+ "id": "gala-leyendas-futbol-coriano",
+ "sec": "deportes",
+ "kicker": "Gala de Leyendas",
+ "iso": "2026-11-16",
+ "hora": "22:58",
+ "src": "El Coriano",
+ "fuente_url": "https://www.youtube.com/watch?v=HAGdgqphHjE&t=0s",
+ "firma": "Redacción El Coriano",
+ "elaboracion": "ia",
+ "title": "Coria del Río celebra su primera Gala de Leyendas del fútbol coriano, organizada por el PSOE local",
+ "sub": "Los organizadores anuncian nuevas ediciones tras recibir decenas de mensajes con nombres de futbolistas que no fueron homenajeados",
+ "caption": "Una de las homenajeadas levanta su reconocimiento durante la gala.",
+ "foto": "gala-leyendas-futbol-coriano-tv.jpg",
+ "fotocredito": "Coriavisión",
+ "claves": [
+  "Coria del Río ha celebrado la primera Gala de Leyendas del fútbol coriano, organizada por el PSOE de Coria del Río.",
+  "La gala reconoció a futbolistas corianos de varias generaciones, algunos de los cuales llegaron a jugar en Primera División.",
+  "Los organizadores quieren convertirla en una serie de galas para homenajear a más jugadores."
+ ],
+ "body": [
+  "Coria del Río ha celebrado la primera Gala de Leyendas del fútbol coriano, un acto de reconocimiento a futbolistas de la localidad organizado por el PSOE de Coria del Río. El partido ha felicitado en su perfil de Facebook a los galardonados, a los que llama «leyenda del fútbol coriano», y ha agradecido la asistencia a la jornada.",
+  "En el acto se subrayó que el homenaje no era solo deportivo, sino a personas que llevaron el nombre de Coria por campos de toda España. Algunos de los homenajeados llegaron a jugar en Primera División; otros se quedaron donde el fútbol les permitió y otros dedicaron su carrera a un solo club e incluso a un barrio.",
+  "## Una idea de hace dos años",
+  "Uno de los organizadores explicó a El Coriano que la idea llevaba un par de años sobre la mesa y que arrancó a raíz de una conversación con Antonio Cordero, conocido como el Arnao. «Hoy es el primer evento, primera gala, y espero y deseo que no sea la última», afirmó.",
+  "Entre los premiados hubo reconocimientos a título póstumo. Antonia recogió el de su hermano, que, según contó a El Coriano, vivía para el fútbol: «Me ha hecho muy feliz, y a mis hermanas también». También subió al escenario un matrimonio en el que ambos fueron jugadores y que, según relataron, se conoció en el instituto y suma cerca de 60 años de vida en común.",
+  "## Más galas en camino",
+  "La organización da por hecho que habrá continuación. Otro de los organizadores contó que en los días previos recibió «decenas y decenas de mensajes» con nombres de futbolistas que no estaban en la lista. «Hay muchos futbolistas en Coria que merecen ese homenaje», señaló, y presentó esta edición como el inicio de una serie de galas para llegar al mayor número posible de personas que han dedicado su vida al fútbol y a Coria del Río.",
+  "<span class='howto'><b>Vídeo.</b> El reportaje completo de la gala puede verse en el canal de YouTube de Coriavisión.</span>"
+ ],
+ "seo": {
+  "slug": "gala-leyendas-futbol-coriano-coria-del-rio",
+  "titulo": "Gala de Leyendas del fútbol coriano en Coria del Río",
+  "descripcion": "Coria del Río celebra la primera Gala de Leyendas del fútbol coriano, organizada por el PSOE local, que homenajea a jugadores de varias generaciones.",
+  "etiquetas": [
+   "Gala de Leyendas",
+   "fútbol coriano",
+   "PSOE de Coria del Río",
+   "homenaje",
+   "futbolistas corianos"
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "agenda": [
+  {
+   "cuando": "Hasta el 19 nov",
+   "que": "Solicitud del voto por correo",
+   "donde": "Oficinas y web de Correos",
+   "hasta": "2026-11-19"
+  },
+  {
+   "cuando": "19 nov, 19.00",
+   "que": "Cabildo de elecciones de la Hermandad de la Estrella",
+   "donde": "Casa hermandad, hasta las 21.30",
+   "hasta": "2026-11-19"
+  },
+  {
+   "cuando": "20 nov, 20.45",
+   "que": "Misa de réquiem por los hermanos difuntos del Gran Poder",
+   "donde": "Capilla de la Hermandad del Gran Poder",
+   "hasta": "2026-11-20",
+   "noticia": "gran-poder-requiem-difuntos-2026"
+  },
+  {
+   "cuando": "22 nov, 12.00",
+   "que": "Coria CF - La Palma",
+   "donde": "Estadio Guadalquivir",
+   "noticia": "coria-cf-gana-rinconada",
+   "hasta": "2026-11-22"
+  },
+  {
+   "cuando": "22 nov, 12.00",
+   "que": "Misa por el XXV aniversario del Señor de la Borriquita",
+   "donde": "Parroquia de San José",
+   "noticia": "san-jose-nuevo-capataz-piedad",
+   "hasta": "2026-11-22"
+  },
+  {
+   "cuando": "24 nov, 16.30",
+   "que": "Jornada formativa de las Patrullas Verdes",
+   "donde": "Casa de Barrio",
+   "noticia": "patrullas-verdes-coria",
+   "hasta": "2026-11-24"
+  },
+  {
+   "cuando": "29 nov",
+   "que": "Elecciones generales",
+   "donde": "Colegios electorales de Coria",
+   "hasta": "2026-11-29"
+  },
+  {
+   "cuando": "Hasta el 20 dic",
+   "que": "Reserva del boletín cuaresmal de San José",
+   "donde": "secretario@sanjosecoria.org",
+   "noticia": "san-jose-nuevo-capataz-piedad",
+   "hasta": "2026-12-20"
+  }
+ ]
+}

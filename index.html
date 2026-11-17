@@ -1,0 +1,1070 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>El Coriano</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/svg+xml" href="publi/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="publi/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<meta name="description" content="Noticias de Coria del Río.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="El Coriano">
+<meta property="og:title" content="El Coriano | Noticias de Coria del Río">
+<meta property="og:description" content="Noticias de Coria del Río.">
+<meta property="og:url" content="https://elcoriano.es/">
+<meta property="og:image" content="https://elcoriano.es/publi/logo-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://elcoriano.es/publi/logo-og.jpg">
+<link rel="manifest" href="publi/site.webmanifest">
+<meta name="theme-color" content="#0B5D7A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,600;62..125,700;62..125,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Lato:wght@400;700;900&display=swap">
+<style>
+/* Layout: portada de diario sobria a la manera de The Objective: cabecera centrada, franja «Hoy en Coria», apertura a dos columnas con titular grande en grotesca, filas de tres y cuatro, banda de la casa (El Río), tribuna con firma y agenda; noticia a una columna de lectura en romana */
+:root {
+  --paper: #ffffff;
+  --band: #f2f5f6;
+  --ink: #111517;
+  --muted: #5b6468;
+  --rule: #dfe4e6;
+  --river: #0b5d7a;
+  --band-river: #0b5d7a;
+  --kicker: #0b5d7a;
+  --sun: #c8322b;
+  --notice: #eaf3f6;
+  --photo: #e5ecef;
+  --f-head: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-serif: "Newsreader", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111416; --band: #191e21; --ink: #eceeee; --muted: #a2abaf; --rule: #2c3337;
+    --river: #5bb8da; --band-river: #0d3f52; --kicker: #6cc2e0; --sun: #e2574d; --notice: #15242b; --photo: #1d2428;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111416; --band: #191e21; --ink: #eceeee; --muted: #a2abaf; --rule: #2c3337;
+  --river: #5bb8da; --band-river: #0d3f52; --kicker: #6cc2e0; --sun: #e2574d; --notice: #15242b; --photo: #1d2428;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--f-sans); font-size: 16px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--kicker); outline-offset: 2px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+.notice { background: var(--notice); font-size: 12.5px; color: var(--muted); }
+.notice .wrap { padding-block: 8px; }
+.notice b { color: var(--ink); font-weight: 700; }
+
+.notice .wrap { padding-block: 5px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.notice { font-size: 11.5px; }
+.masthead .wrap { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 16px; padding-block: 20px 14px; }
+.masthead .today { font-size: 13px; color: var(--muted); }
+.logo-img { display: block; width: min(400px, 82vw); height: auto; }
+.logo-img.dark { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-img.light { display: none; } :root:not([data-theme="light"]) .logo-img.dark { display: block; } }
+:root[data-theme="dark"] .logo-img.light { display: none; }
+:root[data-theme="dark"] .logo-img.dark { display: block; }
+
+nav.sections { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); position: sticky; top: env(safe-area-inset-top, 0px); background: var(--paper); z-index: 10; }
+nav.sections .wrap { display: flex; gap: 24px; overflow-x: auto; scrollbar-width: none; justify-content: safe center; }
+nav.sections .wrap::-webkit-scrollbar { display: none; }
+nav.sections a { font-size: 15px; font-weight: 500; letter-spacing: .01em; white-space: nowrap; padding-block: 12px 10px; border-bottom: 3px solid transparent; }
+nav.sections a:hover { color: var(--kicker); }
+nav.sections a[aria-current="page"] { border-bottom-color: var(--river); font-weight: 700; }
+nav.sections a.latest { color: var(--kicker); font-weight: 600; }
+
+.ticker { border-bottom: 1px solid var(--rule); }
+.ticker .wrap { display: flex; align-items: center; gap: 14px; padding-block: 9px; overflow-x: auto; scrollbar-width: none; }
+.ticker .wrap::-webkit-scrollbar { display: none; }
+.ticker b { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; display: inline-flex; align-items: center; gap: 7px; }
+.ticker b { margin-right: 6px; }
+.ticker a { font-size: 13.5px; white-space: nowrap; color: var(--ink); }
+.ticker a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.ticker .wrap { gap: 18px; }
+
+.kicker { font-size: 12px; font-weight: 700; color: var(--kicker); text-transform: uppercase; letter-spacing: .07em; }
+.story { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.story > a { display: flex; flex-direction: column; gap: 8px; }
+.story h2, .story h3 { font-family: var(--f-head); margin: 0; text-wrap: balance; letter-spacing: -.012em; }
+.story h3 { font-weight: 700; }
+.story a:hover h2, .story a:hover h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.story .sub { color: var(--muted); font-family: var(--f-serif); font-size: 1.05rem; line-height: 1.4; margin: 0; }
+.byline { font-size: 12.5px; color: var(--muted); }
+.byline b { color: var(--ink); font-weight: 600; }
+.ia { color: var(--muted); }
+.photo { position: relative; aspect-ratio: 16 / 9; max-width: 100%; background: var(--photo); overflow: hidden; display: flex; align-items: flex-end; }
+.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo.fit img { object-fit: contain; }
+.photo.fit img.bg { object-fit: cover; filter: blur(18px) brightness(.75); transform: scale(1.15); }
+.photo span { position: relative; font-size: 10.5px; color: #fff; background: rgba(0,0,0,.55); padding: 2px 6px; margin: 0 0 0 auto; }
+
+main.front { display: flex; flex-direction: column; gap: 32px; padding-block: 26px 48px; }
+.grid-top { display: grid; grid-template-columns: 1.15fr 1fr 300px; gap: 28px; align-items: start; }
+.lead-text h2 { font-size: clamp(1.9rem, 3vw, 2.35rem); line-height: 1.04; font-weight: 500; letter-spacing: -.025em; }
+.lead-text .sub { font-size: 1.15rem; }
+.lead-rel { border-top: 1px solid var(--rule); padding-top: 12px; display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+.lead-rel a { font-size: .98rem; font-weight: 600; line-height: 1.25; display: flex; gap: 10px; }
+.lead-rel a::before { content: ""; width: 6px; height: 6px; background: var(--river); flex: none; margin-top: 7px; }
+.lead-rel a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.top-side { display: flex; flex-direction: column; gap: 18px; border-left: 1px solid var(--rule); padding-left: 24px; }
+.top-side .story + .story { border-top: 1px solid var(--rule); padding-top: 16px; }
+.top-side h3 { font-size: 1.12rem; line-height: 1.2; }
+.row3, .row4 { display: grid; gap: 26px; border-top: 1px solid var(--ink); padding-top: 20px; }
+.row3 { grid-template-columns: repeat(3, 1fr); }
+.row4 { grid-template-columns: repeat(4, 1fr); }
+.row3 h3 { font-size: 1.32rem; line-height: 1.15; }
+.row4 h3 { font-size: 1.08rem; line-height: 1.2; }
+
+.band { background: var(--band-river); color: #fff; }
+.band .inner { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 18px; }
+.band-head { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; border-bottom: 1px solid rgba(255,255,255,.35); padding-bottom: 14px; }
+.band-head h2 { font-family: var(--f-head); font-weight: 800; font-stretch: 112%; font-size: 1.9rem; margin: 0; letter-spacing: -.01em; }
+.band-head p { font-family: var(--f-serif); font-size: 1.05rem; line-height: 1.4; margin: 0; max-width: 62ch; opacity: .9; }
+.band .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+.band .story, .band .kicker, .band .byline, .band .byline b, .band .ia, .band .sub { color: #fff; }
+.band .sub { opacity: .88; }
+.band .pair h3 { font-size: 1.45rem; line-height: 1.15; }
+.band .pair .story + .story { border-left: 1px solid rgba(255,255,255,.3); padding-left: 28px; }
+
+.section-label { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.section-label::before { content: ""; width: 14px; height: 4px; background: var(--river); }
+.bottom { display: grid; grid-template-columns: 2fr 1fr; gap: 28px; border-top: 1px solid var(--ink); padding-top: 20px; }
+.breves { display: flex; flex-direction: column; }
+.breve { display: grid; grid-template-columns: 80px 1fr; gap: 14px; padding-block: 12px; border-bottom: 1px solid var(--rule); }
+.breve:first-child { padding-top: 0; }
+.breve time { font-size: 12px; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums; }
+.breve h3 { font-family: var(--f-head); font-weight: 700; font-size: 1.06rem; line-height: 1.22; margin: 0 0 4px; }
+.breve a:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.breve p { margin: 0; color: var(--muted); font-family: var(--f-serif); font-size: .98rem; }
+.bottom-side { display: flex; flex-direction: column; gap: 24px; align-self: start; min-width: 0; }
+aside.agenda { border-top: 3px solid var(--ink); padding-top: 12px; }
+.agenda ul { list-style: none; margin: 0; padding: 0; }
+.agenda li { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding-block: 10px; border-bottom: 1px solid var(--rule); font-size: .94rem; line-height: 1.32; }
+.agenda li .when { font-size: 12px; font-weight: 700; color: var(--kicker); text-transform: uppercase; letter-spacing: .02em; padding-top: 2px; font-variant-numeric: tabular-nums; }
+.agenda li a { font-weight: 600; }
+.agenda li a:hover { text-decoration: underline; }
+.agenda li .where { display: block; color: var(--muted); font-size: .84rem; font-weight: 400; }
+
+.op-box { border-top: 3px solid var(--ink); padding-top: 12px; display: flex; flex-direction: column; gap: 12px; }
+.op-box a.op { display: flex; gap: 14px; align-items: flex-start; }
+.av { width: 52px; height: 52px; border-radius: 50%; background: var(--band); border: 2px solid var(--river); color: var(--river); display: grid; place-items: center; font-family: var(--f-head); font-weight: 800; font-size: 1.05rem; flex: none; }
+.op-box .who { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; display: block; margin-bottom: 3px; }
+.op-box h3 { font-family: var(--f-serif); font-weight: 600; font-size: 1.22rem; line-height: 1.18; margin: 0; }
+.op-box a.op:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.fict { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: #b3261e; padding: 3px 8px; align-self: flex-start; display: inline-block; }
+.more { font-size: 13px; color: var(--muted); margin: 14px 0 0; line-height: 1.8; }
+.more a { color: var(--kicker); font-weight: 600; }
+
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.sec-head h1 { font-family: var(--f-head); font-weight: 800; font-stretch: 110%; font-size: clamp(2rem, 5vw, 2.9rem); margin: 0; letter-spacing: -.02em; }
+.sec-count { font-size: 13px; color: var(--muted); }
+.sec-lead { display: grid; grid-template-columns: 1.4fr 1fr; gap: 0 28px; }
+.sec-lead .story > a { display: contents; }
+.sec-lead .photo { grid-row: 1 / span 6; }
+.sec-lead h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.06; font-weight: 500; letter-spacing: -.02em; }
+.sec-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.sec-list h3 { font-size: 1.2rem; line-height: 1.2; }
+
+article.full { max-width: 740px; margin: 0 auto; padding-block: 26px 56px; display: flex; flex-direction: column; gap: 14px; }
+.back { font-size: 13px; font-weight: 600; color: var(--kicker); }
+article.full h1 { font-family: var(--f-head); font-weight: 600; font-size: clamp(2rem, 4.8vw, 3rem); line-height: 1.04; margin: 0; text-wrap: balance; letter-spacing: -.025em; }
+article.full .sub { font-family: var(--f-serif); font-size: 1.25rem; line-height: 1.4; color: var(--muted); margin: 0; }
+article.full .meta { display: flex; flex-wrap: wrap; gap: 4px 14px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: 10px; font-size: 13px; color: var(--muted); align-items: center; }
+article.full .meta b { color: var(--ink); font-weight: 700; }
+article.full figure { margin: 4px 0; }
+article.full figcaption { font-size: 12.5px; color: var(--muted); padding-top: 6px; }
+.claves { background: var(--band); border-left: 4px solid var(--river); padding: 14px 18px 4px; }
+.claves .section-label::before { display: none; }
+.claves ul { margin: 0; padding: 0 0 0 18px; }
+.claves li { font-size: .95rem; line-height: 1.45; margin: 0 0 10px; }
+.body p { font-family: var(--f-serif); font-size: 1.2rem; line-height: 1.6; margin: 0 0 1em; max-width: 66ch; }
+.body h3.ladillo { font-family: var(--f-head); font-size: 1.2rem; font-weight: 700; line-height: 1.25; margin: 1.4em 0 .5em; max-width: 66ch; letter-spacing: -.01em; }
+.body a:not(.vm) { color: var(--kicker); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.body p.howto { font-family: var(--f-sans); font-size: .98rem; line-height: 1.5; background: var(--band); border-top: 3px solid var(--river); padding: 12px 16px; }
+.opinion-art h1 { font-family: var(--f-serif); font-weight: 600; font-style: italic; letter-spacing: -.01em; }
+.firma { display: flex; align-items: center; gap: 12px; }
+.firma b { display: block; font-size: 15px; }
+.firma span { font-size: 13px; color: var(--muted); }
+.fuente { font-size: 13px; color: var(--muted); }
+.fuente a { color: var(--kicker); text-decoration: underline; text-underline-offset: 2px; }
+.related { border-top: 1px solid var(--ink); padding-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+.related ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.related li a { display: flex; flex-direction: column; gap: 6px; }
+.related li h3 { font-family: var(--f-head); font-weight: 700; font-size: 1rem; line-height: 1.22; margin: 0; }
+.related li a:hover h3 { text-decoration: underline; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font-size: 12px; font-weight: 600; color: var(--kicker); border: 1px solid var(--rule); padding: 3px 9px; }
+details.seo { border: 1px solid var(--rule); background: var(--band); font-size: 13.5px; }
+details.seo summary { cursor: pointer; padding: 10px 14px; font-weight: 700; }
+details.seo dl { margin: 0; padding: 0 14px 4px; display: grid; grid-template-columns: 170px 1fr; gap: 8px 14px; }
+details.seo dt { color: var(--muted); font-weight: 600; }
+details.seo dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.mono { font-family: ui-monospace, Menlo, monospace; font-size: 12.5px; }
+.cnt { font-weight: 500; font-variant-numeric: tabular-nums; color: var(--muted); }
+.cnt.over { color: #b3261e; }
+.serp { margin: 12px 14px 14px; padding: 12px 14px; background: var(--paper); border: 1px solid var(--rule); display: flex; flex-direction: column; gap: 3px; font-family: Arial, sans-serif; }
+.serp-site { font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+.serp-title { font-size: 18px; color: var(--kicker); line-height: 1.3; }
+.serp-desc { font-size: 13.5px; color: var(--muted); line-height: 1.45; }
+
+footer { border-top: 1px solid var(--ink); font-size: 12.5px; color: var(--muted); }
+footer .wrap { padding-block: 20px 30px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: center; }
+footer .logo-img { width: 190px; }
+footer .ia-note { flex-basis: 100%; margin: 4px 0 0; font-size: 9px; line-height: 1.3; opacity: .9; }
+footer .ia-note a { text-decoration: underline; text-underline-offset: 2px; }
+/* ===== Portada (rediseño oct 2026): rejilla de 12 columnas, 8 + 4 ===== */
+.fp { display: flex; flex-direction: column; gap: 36px; padding-block: 24px 48px; }
+.fp .byline { font-size: 13px; }
+.fp .byline b { font-weight: 700; }
+.fp-row { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); align-items: start; }
+.fp-row > .fp-main { padding-right: 28px; border-right: 1px solid var(--rule); min-width: 0; }
+.fp-row > .fp-side { padding-left: 28px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.blk-label { border-top: 2px solid var(--ink); padding-top: 10px; margin: 0 0 16px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
+.blk-label a:hover { color: var(--kicker); }
+.fp-lead > a { display: flex; flex-direction: column; gap: 10px; }
+.fp-lead h2 { font-size: 48px; line-height: 1.04; font-weight: 700; letter-spacing: -.025em; }
+.fp-lead .byline { margin-bottom: 16px; }
+.fp-lead .photo { aspect-ratio: 2 / 1; }
+/* Primera pantalla según el peso de la apertura (rejilla de 4 columnas) */
+.ft { display: grid; align-items: start; }
+.ft > .c { padding-inline: 14px; min-width: 0; }
+.ft > .c:first-child { padding-left: 0; }
+.ft > .c:last-child { padding-right: 0; }
+.ft > .c + .c { border-left: 1px solid var(--rule); }
+.ft .side { display: flex; flex-direction: column; gap: 22px; }
+.ft2 { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); }
+.lead2 > a { display: flex; flex-direction: column; gap: 10px; }
+.lead2 .photo { aspect-ratio: 3 / 2; margin-bottom: 4px; }
+.lead2 h2, .lead3 h2, .ft4 h2 { font-family: var(--f-head); font-weight: 700; margin: 0; letter-spacing: -.025em; text-wrap: balance; }
+.lead2 h2 { font-size: 36px; line-height: 1.06; }
+.lead2 a:hover h2, .lead3 a:hover h2, .ft4 a:hover h2 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
+.lead2 .sub, .lead3 .sub, .ft4 .sub { font-family: var(--f-serif); color: var(--muted); margin: 10px 0 8px; }
+.lead2 .sub { font-size: 18px; line-height: 1.45; }
+.secs { display: flex; flex-direction: column; }
+.secs > a { display: flex; flex-direction: column; gap: 8px; padding-block: 14px; border-bottom: 1px solid var(--rule); }
+.secs > a:first-child { padding-top: 0; }
+.secs > a:last-child { border-bottom: 0; }
+.secs .photo { aspect-ratio: 16 / 10; margin-bottom: 4px; }
+.secs h3, .tx h3 { font-family: var(--f-head); font-weight: 700; font-size: 20px; line-height: 1.16; margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+.secs a:hover h3, .tx:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.ft3 { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); }
+.lead3 .hd { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.lead3 h2 { font-size: 50px; line-height: 1.03; }
+.lead3 .in { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.lead3 .photo { aspect-ratio: 16 / 10; }
+.lead3 .sub { font-size: 18px; line-height: 1.45; margin-top: 0; }
+.tx3 { display: flex; flex-direction: column; }
+.tx3 .byline { padding-bottom: 12px; }
+.tx3 .rl { font-weight: 700; font-size: 15.5px; line-height: 1.25; padding-block: 12px; border-top: 1px solid var(--rule); }
+.tx3 .rl:hover { text-decoration: underline; text-underline-offset: 3px; }
+.frow4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--ink); padding-top: 14px; }
+.frow4 > .tx { display: flex; flex-direction: column; gap: 6px; padding-inline: 14px; min-width: 0; }
+.frow4 > .tx:first-child { padding-left: 0; }
+.frow4 > .tx:last-child { padding-right: 0; }
+.frow4 > .tx + .tx { border-left: 1px solid var(--rule); }
+.frow4 h3 { font-size: 18px; line-height: 1.2; }
+.frow4.follow { border-top-color: var(--rule); margin-top: 16px; }
+.hora { font-size: 12px; font-weight: 700; color: var(--sun); font-variant-numeric: tabular-nums; }
+.kicker.red { color: var(--sun); }
+.ft4 { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.ft4 .hd { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.ft4 h2 { font-size: 68px; line-height: 1.02; max-width: 1020px; }
+.ft4 .sub { font-size: 21px; line-height: 1.45; max-width: 760px; margin: 14px 0 8px; }
+.ft4 .ph { width: 100%; margin-top: 18px; }
+.ft4 .photo { aspect-ratio: 21 / 8; }
+.ft4 .frow4 { width: 100%; text-align: left; }
+.op4 .who { font-family: var(--f-serif); font-style: italic; font-size: 13px; color: var(--kicker); }
+.op4 h3 { font-family: var(--f-serif) !important; font-weight: 500 !important; }
+.op4 .fict { align-self: flex-start; }
+.ticker.breaking { border-top: 1px solid var(--ink); }
+.ticker .uh { background: var(--sun); color: #fff; padding: 3px 9px; }
+.ticker .uh-h { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ticker.breaking a { font-weight: 600; }
+.lead-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; border-top: 1px solid var(--rule); margin-top: 22px; padding-top: 20px; }
+.lead-pair > .story:first-child { padding-right: 22px; }
+.lead-pair > .story + .story { border-left: 1px solid var(--rule); padding-left: 22px; }
+.lead-pair .photo { aspect-ratio: 487 / 190; }
+.lead-pair h3 { font-size: 22px; line-height: 1.15; }
+.op-head { font-family: var(--f-serif); font-style: italic; font-weight: 400; font-size: 26px; margin: 0; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+.op-list a.op { display: grid; grid-template-columns: minmax(0, 1fr) 64px; gap: 14px; align-items: center; padding-block: 16px; border-bottom: 1px solid var(--rule); }
+.op-list .who { display: block; font-size: 13px; font-weight: 700; color: var(--kicker); margin-bottom: 2px; }
+.op-list h3 { font-family: var(--f-serif); font-weight: 500; font-size: 21px; line-height: 1.2; margin: 0; }
+.op-list a.op:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.op-list .av { width: 64px; height: 64px; font-size: 1.2rem; }
+.op-list .fict { margin-top: 6px; }
+.act-main { display: grid; grid-template-columns: minmax(0, 654fr) minmax(0, 470fr); gap: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--rule); }
+.act-main > a.ph { display: block; }
+.act-main .photo { aspect-ratio: 654 / 368; }
+.act-main h3 { font-size: 28px; line-height: 1.1; }
+.act-list { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 28px; }
+.mini { display: grid; grid-template-columns: minmax(0, 1fr) 106px; gap: 14px; padding-block: 14px; border-bottom: 1px solid var(--rule); align-items: start; }
+.mini h3 { font-family: var(--f-head); font-weight: 700; font-size: 17px; line-height: 1.22; margin: 0 0 6px; letter-spacing: -.01em; }
+.mini:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.mini .sec { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.mini .photo { aspect-ratio: 106 / 84; }
+.mini .photo span, .blk .small .photo span { display: none; }
+.tabs { border-top: 2px solid var(--ink); }
+.tabs [role="tablist"] { display: flex; gap: 24px; }
+.tabs button { font: inherit; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; background: none; border: 0; border-bottom: 3px solid transparent; color: var(--muted); padding: 10px 0 8px; cursor: pointer; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--river); }
+.tabs ol { list-style: none; margin: 0; padding: 0; }
+.tabs li a { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; padding-block: 13px; border-bottom: 1px solid var(--rule); }
+.tabs .n { font-family: var(--f-serif); font-size: 30px; line-height: 1; color: var(--kicker); }
+.tabs li b { display: block; font-size: 15.5px; font-weight: 600; line-height: 1.25; }
+.tabs li a:hover b { text-decoration: underline; text-underline-offset: 3px; }
+.tabs li span.sec { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
+.band .band-head { flex-direction: row; flex-wrap: wrap; align-items: baseline; column-gap: 18px; }
+.rio3 { display: grid; gap: 0; align-items: start; }
+.rio3 > .story { padding-inline: 22px; }
+.rio3 > .story:first-child { padding-left: 0; }
+.rio3 > .story:last-child { padding-right: 0; }
+.rio3 > .story + .story { border-left: 1px solid rgba(255,255,255,.3); }
+.rio3 > .story.big > a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.rio3 > .story.big .photo { aspect-ratio: 4 / 3; }
+.rio3 > .story.big .txt { display: flex; flex-direction: column; gap: 8px; }
+.rio3 h3 { font-size: 19px; line-height: 1.2; }
+.rio3 .big h3 { font-size: 24px; line-height: 1.12; }
+.rio3 .big .sub { color: #fff; opacity: .88; }
+.blocks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.blk .story h3 { font-size: 21px; line-height: 1.16; }
+.blk .small { display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: 14px; border-top: 1px solid var(--rule); margin-top: 14px; padding-top: 12px; }
+.blk .small h3 { font-family: var(--f-head); font-weight: 700; font-size: 15.5px; line-height: 1.25; margin: 0; }
+.blk .small:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.blk .small .photo { aspect-ratio: 96 / 76; }
+.ag3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+.ag3 li { padding: 12px 18px 14px; border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; gap: 4px; }
+.ag3 li:nth-child(3n+1) { padding-left: 0; }
+.ag3 li:nth-child(3n) { padding-right: 0; }
+.ag3 li:not(:nth-child(3n+1)) { border-left: 1px solid var(--rule); }
+.ag3 .when { font-size: 12px; font-weight: 700; color: var(--kicker); text-transform: uppercase; letter-spacing: .02em; font-variant-numeric: tabular-nums; }
+.ag3 .que { font-size: 17px; font-weight: 700; line-height: 1.22; }
+.ag3 a.que:hover { text-decoration: underline; }
+.ag3 .where { font-size: 13px; color: var(--muted); }
+.latest-list { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 28px; }
+.latest-list .mini .sec time { font-weight: 400; }
+@media (max-width: 1000px) {
+  .lead3 h2 { font-size: 40px; }
+  .ft4 h2 { font-size: 50px; }
+  .act-main { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 720px) {
+  .masthead .wrap { grid-template-columns: minmax(0, 1fr); justify-items: center; padding-block: 14px 10px; gap: 6px; }
+  .masthead .today { order: 2; font-size: 12px; }
+  .masthead .mh-right { display: none; }
+  .fp { gap: 30px; padding-top: 18px; }
+  .fp-row { grid-template-columns: minmax(0, 1fr); }
+  .fp-row > .fp-main { padding-right: 0; border-right: 0; }
+  .fp-row > .fp-side { padding-left: 0; margin-top: 30px; }
+  .ft, .ft2, .ft3, .frow4, .ft3 .in { grid-template-columns: minmax(0, 1fr) !important; }
+  .ft > .c { padding-inline: 0 !important; border-left: 0 !important; }
+  .ft > .c + .c { border-top: 1px solid var(--rule); margin-top: 20px; padding-top: 20px; }
+  .frow4 > .tx { padding-inline: 0 !important; border-left: 0 !important; border-top: 1px solid var(--rule); padding-top: 12px; }
+  .frow4 > .tx:first-child { border-top: 0; }
+  .lead2 h2, .lead3 h2 { font-size: 30px; }
+  .ft4 h2 { font-size: 34px; }
+  .ft4 .photo { aspect-ratio: 16 / 9; }
+  .ft4 .sub { font-size: 1.1rem; }
+  .lead-pair, .act-list, .blocks, .ag3, .latest-list { grid-template-columns: minmax(0, 1fr); }
+  .lead-pair > .story:first-child { padding-right: 0; }
+  .lead-pair > .story + .story { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); margin-top: 18px; padding-top: 18px; }
+  .rio3 { grid-template-columns: minmax(0, 1fr) !important; }
+  .rio3 > .story { padding-inline: 0; }
+  .rio3 > .story + .story { border-left: 0; border-top: 1px solid rgba(255,255,255,.3); margin-top: 16px; padding-top: 16px; }
+  .rio3 > .story.big > a { grid-template-columns: minmax(0, 1fr); }
+  .ag3 li, .ag3 li:nth-child(3n+1), .ag3 li:nth-child(3n) { padding-inline: 0; border-left: 0 !important; }
+}
+/* ===== Publicidad Vivamóvil (creatividades HTML, mismo aspecto en tema claro y oscuro) ===== */
+.ad-slot { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.ad-label { font-family: var(--f-sans); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.ad-mega { display: flex; justify-content: center; background: var(--band); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: 10px; }
+.ad-mega + .ad-mega { display: none; }
+main.front > .ad-mega, .after-article { margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); }
+.after-article { margin-bottom: 32px; }
+.vm { --vm-green: #00573f; --vm-lime: #94cc00; --vm-ink: #1f2a26; display: flex; text-decoration: none; color: var(--vm-ink); font-family: "Lato", Arial, sans-serif; overflow: hidden; max-width: 100%; position: relative; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+.vm:focus-visible { outline: 2px solid var(--kicker); outline-offset: 3px; }
+.vm .logo-box { background: #fff; display: flex; align-items: center; justify-content: center; }
+.vm .logo-box img { display: block; height: auto; }
+.vm .cta { background: var(--vm-lime); color: #12301f; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; }
+.vm .price { font-weight: 900; line-height: .9; letter-spacing: -.02em; }
+.vm .price small { font-size: .42em; font-weight: 700; letter-spacing: 0; }
+.vm .fine { font-size: 10px; opacity: .78; line-height: 1.25; }
+.vm:hover .cta { background: #a9e400; }
+
+/* 970x90 megabanner */
+.vm-lb { width: 970px; height: 90px; background: var(--vm-green); color: #fff; }
+.vm-lb .logo-box { width: 190px; flex: none; }
+.vm-lb .logo-box img { width: 170px; }
+.vm-lb .msg { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 22px; gap: 3px; min-width: 0; }
+.vm-lb .msg b { font-size: 19px; font-weight: 900; line-height: 1.05; white-space: nowrap; }
+.vm-lb .msg span { font-size: 12px; color: #d9f0a3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vm-lb .price { font-size: 46px; color: var(--vm-lime); display: flex; align-items: center; padding-right: 20px; }
+.vm-lb .cta { font-size: 14px; padding: 0 22px; }
+
+/* 320x100 banner móvil */
+.vm-mb { width: 320px; height: 100px; background: var(--vm-green); color: #fff; }
+.vm-mb .left { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 8px 12px; gap: 4px; min-width: 0; }
+.vm-mb .left img { width: 104px; background: #fff; padding: 3px 5px; border-radius: 2px; }
+.vm-mb .left b { font-size: 14px; font-weight: 900; line-height: 1.1; }
+.vm-mb .right { width: 104px; background: var(--vm-lime); color: #12301f; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; }
+.vm-mb .right .price { font-size: 30px; }
+.vm-mb .right span { font-size: 10px; font-weight: 900; text-transform: uppercase; }
+
+/* 300x250 robapáginas */
+.vm-mr { width: 300px; height: 250px; flex-direction: column; background: #fff; border: 1px solid #dfe7e3; }
+.vm-mr .logo-box { height: 52px; border-bottom: 4px solid var(--vm-lime); }
+.vm-mr .logo-box img { width: 140px; }
+.vm-mr .body { flex: 1; background: var(--vm-green); color: #fff; padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+.vm-mr .eyebrow { font-size: 11px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: var(--vm-lime); }
+.vm-mr h4 { margin: 0; font-size: 21px; font-weight: 900; line-height: 1.08; }
+.vm-mr ul { margin: 0; padding: 0; list-style: none; font-size: 12.5px; line-height: 1.35; color: #e4f3c2; }
+.vm-mr .row { margin-top: auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; }
+.vm-mr .price { font-size: 38px; color: #fff; }
+.vm-mr .cta { font-size: 12px; padding: 9px 12px; }
+
+/* variante canal local */
+.vm-tv .body { background: linear-gradient(160deg, #00573f 0%, #00573f 55%, #0b3d2d 100%); }
+.vm-tv .chan { display: flex; gap: 6px; flex-wrap: wrap; }
+.vm-tv .chan span { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); font-size: 11px; font-weight: 700; padding: 3px 7px; border-radius: 2px; }
+
+/* variante plan amigo */
+.vm-friend .body { background: var(--vm-lime); color: #12301f; }
+.vm-friend .eyebrow { color: var(--vm-green); }
+.vm-friend ul { color: #24412f; }
+.vm-friend .big { font-size: 54px; font-weight: 900; line-height: .9; color: var(--vm-green); }
+.vm-friend .cta { background: var(--vm-green); color: #fff; }
+
+/* 300x600 media página */
+.vm-hp { width: 300px; height: 600px; flex-direction: column; background: var(--vm-green); color: #fff; }
+.vm-hp .logo-box { height: 80px; border-bottom: 5px solid var(--vm-lime); }
+.vm-hp .logo-box img { width: 190px; }
+.vm-hp .body { flex: 1; padding: 22px 22px 18px; display: flex; flex-direction: column; gap: 12px; }
+.vm-hp .eyebrow { font-size: 12px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; color: var(--vm-lime); }
+.vm-hp h4 { margin: 0; font-size: 32px; font-weight: 900; line-height: 1.02; }
+.vm-hp ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
+.vm-hp li { display: flex; gap: 8px; align-items: baseline; }
+.vm-hp li::before { content: ""; width: 8px; height: 8px; background: var(--vm-lime); flex: none; transform: translateY(-1px); }
+.vm-hp .price { font-size: 72px; color: var(--vm-lime); margin-top: auto; }
+.vm-hp .cta { font-size: 15px; padding: 14px; }
+.vm-hp .office { font-size: 12px; line-height: 1.4; color: #d9f0a3; border-top: 1px solid rgba(255,255,255,.2); padding-top: 10px; }
+
+/* 320x50 anclado móvil */
+.ad-sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--paper); border-top: 1px solid var(--rule); box-shadow: 0 -4px 14px rgba(0,0,0,.12); padding-top: 6px; padding-bottom: calc(6px + env(safe-area-inset-bottom, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: none; justify-content: center; }
+.ad-sticky .close { position: absolute; top: -26px; right: max(10px, env(safe-area-inset-right, 0px)); width: 26px; height: 26px; border: 1px solid var(--rule); border-bottom: 0; background: var(--paper); color: var(--ink); font: 700 16px/1 var(--f-sans); cursor: pointer; }
+.vm-an { width: 320px; height: 50px; background: var(--vm-green); color: #fff; align-items: stretch; }
+.vm-an .logo-box { width: 92px; flex: none; }
+.vm-an .logo-box img { width: 80px; }
+.vm-an .msg { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 8px; min-width: 0; }
+.vm-an .msg b { font-size: 13px; font-weight: 900; line-height: 1.05; }
+.vm-an .msg span { font-size: 10px; color: #d9f0a3; }
+.vm-an .cta { font-size: 11px; padding: 0 9px; }
+
+.top-side .ad-slot, .bottom-side .ad-slot { align-items: center; }
+.ad-infeed { padding-block: 4px; }
+.body .ad-slot { margin: 6px 0 22px; }
+.bottom-side { display: flex; flex-direction: column; gap: 22px; align-self: start; }
+
+/* qué formato ve cada dispositivo */
+.only-mob { display: none !important; }
+@media (max-width: 1000px) {
+  .only-desk { display: none !important; }
+  .only-mob { display: flex !important; }
+}
+@media (max-width: 720px) {
+  .ad-sticky.on { display: flex; }
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+}
+
+/* rascacielos laterales 160x600, solo en pantallas anchas */
+/* Laterales: formato fijo 450x1000 (proporción 9:20). Se muestran a tamaño real si caben; si no, se escalan
+   manteniendo la proporción y se ocultan cuando el hueco lateral es menor de 160 px. */
+.rail { position: fixed; top: 0; z-index: 9; display: none; flex-direction: column; align-items: center; gap: 4px; }
+.rail.on { display: flex; }
+.sky-wrap { overflow: hidden; position: relative; }
+.sky-wrap > .vm-sky { position: absolute; top: 0; left: 0; transform-origin: top left; }
+.vm-sky { width: 450px; height: 1000px; flex-direction: column; background: var(--vm-green); color: #fff; }
+.vm-sky .logo-box { height: 120px; flex: none; border-bottom: 10px solid var(--vm-lime); }
+.vm-sky .logo-box img { width: 320px; }
+.vm-sky .pic { height: 400px; flex: none; overflow: hidden; position: relative; }
+.vm-sky .pic img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+.vm-sky .txt { flex: 1; padding: 26px 32px 30px; display: flex; flex-direction: column; gap: 12px; min-height: 0; }
+.vm-sky .eyebrow { font-size: 22px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: var(--vm-lime); }
+.vm-sky h4 { margin: 0; font-size: 36px; font-weight: 900; line-height: 1.04; }
+.vm-sky p { margin: 0; font-size: 20px; line-height: 1.35; color: #e4f3c2; }
+.vm-sky .price { font-size: 92px; color: var(--vm-lime); margin-top: auto; }
+.vm-sky .cta { font-size: 22px; padding: 18px 12px; flex: none; }
+.vm-sky.lime { background: var(--vm-lime); color: #12301f; }
+.vm-sky.lime .eyebrow { color: var(--vm-green); }
+.vm-sky.lime p { color: #24412f; }
+.vm-sky.lime .price { color: var(--vm-green); }
+.vm-sky.lime .cta { background: var(--vm-green); color: #fff; }
+.vm-sky.white { background: #fff; color: var(--vm-ink); border: 1px solid #dfe7e3; }
+.vm-sky.white .eyebrow { color: var(--vm-green); }
+.vm-sky.white p { color: #3a4a43; }
+.vm-sky.white .price { color: var(--vm-green); }
+.lead-photo { display: block; width: 100%; }
+.lead-media { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.vm-sky { max-width: none !important; }
+@media (max-width: 1080px) {
+  .grid-top { grid-template-columns: 1.1fr 1fr; }
+  .top-side { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .top-side .story + .story { border-top: 0; padding-top: 0; border-left: 1px solid var(--rule); padding-left: 24px; }
+}
+@media (max-width: 900px) {
+  .row4 { grid-template-columns: repeat(2, 1fr); }
+  .sec-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 720px) {
+  .grid-top, .top-side, .bottom, .band .pair, .row3, .row4, .sec-list, .sec-lead, .related ul { grid-template-columns: 1fr; }
+  .grid-top { display: flex; flex-direction: column; }
+  .lead-media { order: -1; width: 100%; }
+  .lead-media .lead-rel { display: none; }
+  .top-side { display: flex; }
+  .top-side .story + .story { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 16px; }
+  .row3 > .story + .story, .row4 > .story + .story { border-top: 1px solid var(--rule); padding-top: 18px; }
+  .band .inner { padding: 16px; }
+  .band .pair .story + .story { border-left: 0; padding-left: 0; border-top: 1px solid rgba(255,255,255,.3); padding-top: 18px; }
+  .sec-lead .story > a { display: flex; }
+  .agenda li { grid-template-columns: 82px 1fr; }
+  .breve { grid-template-columns: 1fr; gap: 4px; }
+  details.seo dl { grid-template-columns: 1fr; gap: 2px; }
+  nav.sections .wrap { justify-content: flex-start; }
+  article.full .meta { font-size: 12.5px; }
+}
+
+/* ===== Agenda ampliable, el tiempo y farmacias de guardia ===== */
+.ag-more{margin-top:4px}
+.ag-more>summary{list-style:none;cursor:pointer;font-size:13px;font-weight:700;color:var(--kicker);padding:12px 0 4px}
+.ag-more>summary::-webkit-details-marker{display:none}
+.ag-more[open]>summary .mas{display:none}.ag-more:not([open])>summary .menos{display:none}
+:root{--wx-sun:#e3a21a;--wx-cloud:#d3dadd;--wx-cloud-line:#8f9aa0;--wx-up:#c8322b;--wx-down:#0b5d7a;--wx-cross:#0f8a5f}
+:root[data-theme="dark"]{--wx-cloud:#56616a;--wx-cloud-line:#7d8a92;--wx-up:#e2574d;--wx-down:#6cc2e0;--wx-cross:#4cc492}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--wx-cloud:#56616a;--wx-cloud-line:#7d8a92;--wx-up:#e2574d;--wx-down:#6cc2e0;--wx-cross:#4cc492}}
+.ag-util{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);margin-top:26px}
+.ag-util>section{min-width:0;display:flex;flex-direction:column;gap:12px}
+.ag-util>section:first-child{padding-right:24px}
+.ag-util>section+section{border-left:1px solid var(--rule);padding-left:24px}
+.ag-util .blk-label{margin:0}
+.ag-util>section+section .blk-label{border-top-color:var(--ink)}
+.ag-util .src{font-size:11.5px;color:var(--muted);margin:auto 0 0}
+.ag-util .src a{text-decoration:underline;text-underline-offset:2px}
+.wx-ico{display:block;flex:none}
+.wx-ico .sun{fill:var(--wx-sun)}.wx-ico .ray{stroke:var(--wx-sun);stroke-width:3.2;stroke-linecap:round}
+.wx-ico .cloud{fill:var(--wx-cloud);stroke:var(--wx-cloud-line);stroke-width:1.5}
+.wx-ico .drop{stroke:var(--river);stroke-width:3;stroke-linecap:round}
+.wx-ico .bolt{fill:var(--sun)}.wx-ico .fog{stroke:var(--wx-cloud-line);stroke-width:3;stroke-linecap:round}
+.wx-today{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:center}
+.wx-temps{display:flex;align-items:baseline;gap:10px;font-family:var(--f-head)}
+.wx-temps .mx{font-size:46px;line-height:1;font-weight:700;letter-spacing:-.03em}
+.wx-temps .mn{font-size:24px;color:var(--muted);font-weight:500}
+.wx-desc{font-size:13.5px;line-height:1.35}
+.wx-desc b{font-weight:700}
+.wx-trend{grid-column:1/-1;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;background:var(--band);padding:7px 10px}
+.wx-trend.up{color:var(--wx-up)}.wx-trend.down{color:var(--wx-down)}.wx-trend.eq{color:var(--muted)}
+.wx-trend .th-fill{fill:currentColor}.wx-trend .th-line{stroke:currentColor;fill:none;stroke-width:2}
+.wx-days{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule)}
+.wx-days>div{display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 4px 2px;min-width:0}
+.wx-days>div+div{border-left:1px solid var(--rule)}
+.wx-days .d{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.wx-days .t{font-size:13px;font-weight:700}.wx-days .t span{color:var(--muted);font-weight:400}
+.wx-days .p{font-size:11px;color:var(--kicker);font-weight:600;min-height:14px}
+.fm-day{font-size:13px;color:var(--muted)}
+.fm-night{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start;background:var(--band);border-left:3px solid var(--wx-cross);padding:10px 12px}
+.fm-night .when{grid-column:2;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--wx-cross)}
+.fm-night svg{grid-row:1/span 3}
+.fm-night .n{grid-column:2;font-family:var(--f-head);font-weight:700;font-size:17px;line-height:1.22}
+.fm-night .x{grid-column:2}
+.fm-night .x,.fm-list .x{font-size:13px;color:var(--muted)}
+.fm-tel{font-weight:700;color:var(--ink);white-space:nowrap}
+.fm-tel:hover{color:var(--kicker)}
+.fm-list{list-style:none;margin:0;padding:0}
+.fm-list li{padding:8px 0;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:1px}
+.fm-list .n{font-family:var(--f-head);font-weight:700;font-size:15px;line-height:1.25}
+.fm-h{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:2px 0 0}
+@media (max-width:720px){.ag-util{grid-template-columns:minmax(0,1fr)}.ag-util>section:first-child{padding-right:0}.ag-util>section+section{border-left:0;padding-left:0;margin-top:26px}}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<div class="notice"><div class="wrap"><b>Fase de pruebas.</b> Noticias reales de Coria del Río de los últimos 30 días. Fotos de ejemplo de otros medios: no publicar sin permiso.</div></div>
+
+<header class="masthead"><div class="wrap">
+  <span class="today" id="today"></span>
+  <a href="#portada" aria-label="El Coriano, portada"><img class="logo-img light" src="publi/logo-el-coriano.svg" alt="El Coriano. Coria del Río"><img class="logo-img dark" src="publi/logo-el-coriano-oscuro.svg" alt="El Coriano. Coria del Río"></a>
+  <span class="mh-right"></span>
+</div></header>
+
+<nav class="sections" aria-label="Secciones"><div class="wrap" id="nav"></div></nav>
+<div class="ticker" id="ticker-bar"><div class="wrap" id="ticker"></div></div>
+
+<div class="wrap" id="app"></div>
+
+<footer><div class="wrap">
+  <a href="#portada" aria-label="El Coriano, portada"><img class="logo-img light" src="publi/logo-el-coriano.svg" alt="El Coriano"><img class="logo-img dark" src="publi/logo-el-coriano-oscuro.svg" alt="El Coriano"></a>
+  <span>El periódico de Coria del Río · Viva Studios</span>
+  <span>redaccion@elcoriano.es (pendiente)</span>
+  <p class="ia-note">El Coriano combina piezas de su redacción con textos elaborados con inteligencia artificial; estos últimos se identifican en la firma. <a href="#como-trabajamos">Cómo trabajamos</a></p>
+</div></footer>
+<div class="rail rail-l" id="rail-l" role="complementary" aria-label="Publicidad"></div>
+<div class="rail rail-r" id="rail-r" role="complementary" aria-label="Publicidad"></div>
+<div class="ad-sticky" id="ad-sticky" role="complementary" aria-label="Publicidad"></div>
+
+<script src="noticias.js"></script>
+<script src="publi/anuncios.js"></script>
+<script src="tiempo.js"></script>
+<script src="guardias.js"></script>
+<script>
+// Previa de la Mesa: si esta página se abre dentro de la Mesa, enseña las noticias que le pasa la Mesa.
+try{var P=window.parent&&window.parent!==window&&window.parent.EP_PREVIEW;if(P)window.EP=JSON.parse(JSON.stringify(P));}catch(e){}
+// Mesa de redacción: la dirección del periódico terminada en #mesa abre la mesa (mesa/mesa.js) en lugar de la portada.
+function abrirMesa(){if(window.__mesa)return;window.__mesa=1;setTimeout(function(){try{removeEventListener("resize",fitRails);removeEventListener("scroll",fitRails)}catch(e){}document.querySelectorAll('style,link[rel="stylesheet"]').forEach(function(e){e.remove()});document.body.className="";document.body.removeAttribute("style");document.body.innerHTML="";var s=document.createElement("script");s.src="mesa/mesa.js";document.body.appendChild(s)},0)}
+window.addEventListener("hashchange",function(){if(window.__mesa&&location.hash!=="#mesa")location.reload()});
+</script>
+<script>
+const SECTIONS = [
+  ["portada", "Portada"], ["coria", "Coria"], ["sucesos", "Sucesos"], ["politica", "Política"], ["economia", "Economía y empleo"],
+  ["cultura", "Cultura y planes"], ["hermandades", "Hermandades"], ["deportes", "Deportes"], ["rio", "El Río"], ["opinion", "Opinión"]
+];
+const EP = window.EP;
+const A = EP.noticias;
+const HOY = EP.meta.actualizado;
+const AGENDA = EP.agenda.filter(x => x.hasta >= HOY);
+const byId = Object.fromEntries(A.map(a => [a.id, a]));
+const SITE = "https://www.elcoriano.es";
+const MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+A.forEach(a => { const [y, m, d] = a.iso.split("-").map(Number); a.date = `${d} ${MESES[m - 1]} ${y}`; });
+const ORDER = A.map((a, i) => [a, i]).sort((x, y) => y[0].iso.localeCompare(x[0].iso) || x[1] - y[1]).map(x => x[0]);
+const secName = id => SECTIONS.find(s => s[0] === id)[1];
+const seoOf = a => { const [slug, title, desc, tags] = a.seo; return { slug, title, desc, tags, url: `${SITE}/${a.sec}/${slug}` }; };
+const HOME_SEO = { title: "El Coriano | Noticias de Coria del Río", desc: "Diario digital de Coria del Río: actualidad local, el Guadalquivir, hermandades, política municipal, empleo, cultura, deportes y agenda.", url: SITE + "/" };
+
+// Cumplimiento del artículo 50 del Reglamento europeo de IA. elaboracion: "ia" (por defecto), "ia_revisada" o "redaccion".
+const IA_LABEL = { ia: "Elaborado con IA", ia_revisada: "Elaborado con ayuda de IA" };
+const iaTag = a => { const t = IA_LABEL[a.elaboracion || "ia"]; return t ? ` · <span class="ia">${t}</span>` : ""; };
+const firmaOf = a => a.sec === "opinion" ? a.autor : (a.firma || "Redacción El Coriano");
+
+function setMeta(attr, key, val) {
+  let m = document.head.querySelector(`meta[${attr}="${key}"]`);
+  if (!m) { m = document.createElement("meta"); m.setAttribute(attr, key); document.head.appendChild(m); }
+  m.setAttribute("content", val);
+}
+function applySeo(a, pageTitle) {
+  const s = a ? seoOf(a) : HOME_SEO;
+  document.title = a ? `${s.title} | El Coriano` : (pageTitle || s.title);
+  setMeta("name", "description", s.desc);
+  setMeta("name", "keywords", a ? s.tags.join(", ") : "Coria del Río, noticias, Guadalquivir, Aljarafe, Sevilla");
+  setMeta("name", "robots", "max-image-preview:large");
+  setMeta("property", "og:type", a ? "article" : "website");
+  setMeta("property", "og:site_name", "El Coriano");
+  setMeta("property", "og:locale", "es_ES");
+  setMeta("property", "og:title", a ? s.title : document.title);
+  setMeta("property", "og:description", s.desc);
+  setMeta("property", "og:url", s.url);
+  setMeta("property", "og:image", a ? `${SITE}/fotos/${a.foto}` : `${SITE}/publi/logo-og.jpg`);
+  setMeta("name", "twitter:card", "summary_large_image");
+  if (a) { setMeta("property", "article:published_time", a.iso + "T08:00:00+02:00"); setMeta("property", "article:section", secName(a.sec)); }
+  let c = document.head.querySelector('link[rel="canonical"]');
+  if (!c) { c = document.createElement("link"); c.rel = "canonical"; document.head.appendChild(c); }
+  c.href = s.url;
+  let ld = document.getElementById("ld-json");
+  if (!ld) { ld = document.createElement("script"); ld.type = "application/ld+json"; ld.id = "ld-json"; document.head.appendChild(ld); }
+  const pub = { "@type": "NewsMediaOrganization", name: "El Coriano", url: SITE, logo: { "@type": "ImageObject", url: SITE + "/publi/icon-512.png" }, parentOrganization: { "@type": "Organization", name: "Viva Studios" } };
+  ld.textContent = JSON.stringify(a ? {
+    "@context": "https://schema.org", "@type": a.sec === "opinion" ? "OpinionNewsArticle" : "NewsArticle",
+    headline: a.title, alternativeHeadline: a.sub, description: s.desc, image: [`${SITE}/fotos/${a.foto}`],
+    abstract: (a.claves || []).join(" ") || undefined, isBasedOn: a.fuente_url || undefined,
+    wordCount: a.body.join(" ").replace(/<[^>]+>/g, " ").replace(/## /g, " ").split(/\s+/).filter(Boolean).length,
+    datePublished: a.iso + "T08:00:00+02:00", dateModified: HOY + "T08:00:00+02:00",
+    articleSection: secName(a.sec), keywords: s.tags.join(", "), inLanguage: "es-ES",
+    mainEntityOfPage: s.url, contentLocation: { "@type": "Place", name: "Coria del Río, Sevilla" },
+    author: a.sec === "opinion" ? { "@type": "Person", name: a.autor } : { "@type": "Organization", name: firmaOf(a) },
+    publisher: pub
+  } : { "@context": "https://schema.org", ...pub, areaServed: "Coria del Río", publishingPrinciples: SITE + "/como-trabajamos" }, null, 2);
+}
+function seoBox(a) {
+  const s = seoOf(a);
+  const len = (t, max, min) => `<span class="cnt ${t.length > max || (min && t.length < min) ? "over" : ""}">${t.length}/${max}</span>`;
+  return `<div class="tags" aria-label="Etiquetas">${s.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+  <details class="seo"><summary>Ficha SEO de esta noticia</summary>
+    <dl>
+      <dt>Título SEO ${len(s.title, 60)}</dt><dd>${s.title}</dd>
+      <dt>Meta descripción ${len(s.desc, 155, 140)}</dt><dd>${s.desc}</dd>
+      <dt>URL canónica</dt><dd class="mono">${s.url}</dd>
+      <dt>Palabras clave</dt><dd>${s.tags.join(", ")}</dd>
+      <dt>Marcado</dt><dd>${a.sec === "opinion" ? "OpinionNewsArticle" : "NewsArticle"} (schema.org), Open Graph y Twitter Card</dd>
+    </dl>
+    <div class="serp" aria-label="Vista previa en Google">
+      <span class="serp-site">El Coriano · ${s.url.replace("https://", "").replace(/\//g, " › ")}</span>
+      <span class="serp-title">${s.title} | El Coriano</span>
+      <span class="serp-desc">${a.date} — ${s.desc}</span>
+    </div>
+  </details>`;
+}
+const initials = n => (n || "").split(/\s+/).filter(w => w.length > 2).slice(0, 2).map(w => w[0]).join("").toUpperCase();
+const credOf = a => a.foto.startsWith("generica-") ? "" : ` · ${/^Gráfico/.test(a.fotocredito || "") ? a.fotocredito : "Foto: " + (a.fotocredito || a.src)}`;
+function photo(a) {
+  const e = a.foto.startsWith("generica-") ? "contain" : (a.encuadre || "center");
+  const cred = ""; // sin rótulos sobre la foto: el crédito va en el pie, dentro de la noticia
+  if (e === "contain") return `<div class="photo fit"><img class="bg" src="fotos/${a.foto}" alt="" aria-hidden="true" loading="lazy"><img src="fotos/${a.foto}" alt="${a.caption}" loading="lazy">${cred}</div>`;
+  return `<div class="photo"><img src="fotos/${a.foto}" alt="${a.caption}" loading="lazy" style="object-position:${e}">${cred}</div>`;
+}
+const OWN_SRC = "El Coriano";
+const extSrc = a => (a.src || "").split(/\s+y\s+|,\s*/).map(s => s.trim()).filter(s => s && s !== OWN_SRC).join(" y ");
+const ownSrc = a => (a.src || "").split(/\s+y\s+|,\s*/).map(s => s.trim()).includes(OWN_SRC);
+const byline = a => `<span class="byline"><b>${firmaOf(a)}</b> · ${a.date}</span>`;
+function card(id, o = {}) {
+  const a = byId[id]; const tag = o.h || "h3";
+  return `<div class="story ${o.cls || ""}"><a href="#${a.id}">${o.photo ? photo(a) : ""}<span class="kicker">${a.kicker}</span><${tag}>${a.title}</${tag}></a>${o.sub ? `<p class="sub">${a.sub}</p>` : ""}${byline(a)}</div>`;
+}
+
+
+// ===== el tiempo (tiempo.js, AEMET) y farmacias de guardia (guardias.js, Colegio de Farmacéuticos) =====
+const TI = window.TIEMPO, GU = window.GUARDIAS;
+const TOWN = "Coria del Río", TOWN_SHORT = "Coria";
+const isoLocal = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const HOY_REAL = isoLocal(new Date());
+const DIAS_SEM = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+const dObj = iso => { const [y, m, d] = iso.split("-").map(Number); return new Date(y, m - 1, d); };
+const wxKind = c => { c = (c || "").toLowerCase(); if (/tormenta/.test(c)) return "storm"; if (/nieve/.test(c)) return "snow"; if (/lluvia|chubasco|llovizna/.test(c)) return "rain"; if (/niebla|bruma|calima/.test(c)) return "fog"; if (/cubierto|muy nuboso/.test(c)) return "cloud"; if (/despejado/.test(c)) return "sun"; return "partly"; };
+const SUN = (cx, cy, r) => { let rays = ""; for (let k = 0; k < 8; k++) { const a = k * Math.PI / 4, x1 = cx + Math.cos(a) * (r + 4), y1 = cy + Math.sin(a) * (r + 4), x2 = cx + Math.cos(a) * (r + 9), y2 = cy + Math.sin(a) * (r + 9); rays += `<line class="ray" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`; } return rays + `<circle class="sun" cx="${cx}" cy="${cy}" r="${r}"/>`; };
+const CLOUD = (dx = 0, dy = 0) => `<path class="cloud" transform="translate(${dx} ${dy})" d="M18 46h28a10 10 0 0 0 1-20 14 14 0 0 0-27-4 11 11 0 0 0-2 24z"/>`;
+const wxIcon = (kind, size = 48) => {
+  const g = { sun: SUN(32, 32, 12),
+    partly: SUN(24, 22, 9) + CLOUD(4, 4),
+    cloud: CLOUD(-6, -6) + CLOUD(2, 2),
+    rain: CLOUD(0, -6) + [16, 28, 40].map(x => `<line class="drop" x1="${x + 4}" y1="46" x2="${x}" y2="56"/>`).join(""),
+    storm: CLOUD(0, -6) + `<polygon class="bolt" points="34,38 24,52 31,52 27,62 40,46 33,46 37,38"/>` + `<line class="drop" x1="20" y1="44" x2="16" y2="54"/><line class="drop" x1="48" y1="44" x2="44" y2="54"/>`,
+    snow: CLOUD(0, -6) + [18, 32, 46].map(x => `<circle class="sun" cx="${x}" cy="52" r="2.6"/>`).join(""),
+    fog: CLOUD(0, -10) + [42, 50, 58].map((y, i) => `<line class="fog" x1="${10 + i * 4}" y1="${y}" x2="${54 - i * 4}" y2="${y}"/>`).join("") }[kind];
+  return `<svg class="wx-ico" width="${size}" height="${size}" viewBox="0 0 64 64" aria-hidden="true">${g}</svg>`;
+};
+const THERMO = `<svg width="16" height="26" viewBox="0 0 16 26" aria-hidden="true"><rect class="th-line" x="5" y="1.5" width="6" height="16" rx="3"/><circle class="th-fill" cx="8" cy="20" r="5"/><rect class="th-fill" x="6.5" y="8" width="3" height="12"/></svg>`;
+const ARROW = up => `<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path class="th-fill" d="${up ? "M7 1 13 9H9v4H5V9H1z" : "M7 13 13 5H9V1H5v4H1z"}"/></svg>`;
+function Weather() {
+  if (!TI || !TI.dias) return "";
+  const i = TI.dias.findIndex(d => d.fecha >= HOY_REAL);
+  if (i < 0) return "";
+  const t = TI.dias[i], prev = TI.dias[i - 1], next = TI.dias.slice(i + 1, i + 5);
+  let trend = "";
+  if (prev) { const df = t.max - prev.max; trend = df >= 2 ? `<div class="wx-trend up">${THERMO}${ARROW(true)}Suben las temperaturas: ${df} grados más que ayer</div>` : df <= -2 ? `<div class="wx-trend down">${THERMO}${ARROW(false)}Bajan las temperaturas: ${-df} grados menos que ayer</div>` : `<div class="wx-trend eq">${THERMO}Temperaturas parecidas a las de ayer</div>`; }
+  const dia = dObj(t.fecha);
+  return `<section class="wx" aria-label="El tiempo en ${TOWN_SHORT}"><p class="blk-label">El tiempo en ${TOWN_SHORT}</p>
+    <div class="wx-today">${wxIcon(wxKind(t.cielo), 76)}<div><div class="wx-temps"><span class="mx">${t.max}°</span><span class="mn">${t.min}°</span></div>
+    <div class="wx-desc"><b>${t.fecha === HOY_REAL ? "Hoy" : DIAS_SEM[dia.getDay()][0].toUpperCase() + DIAS_SEM[dia.getDay()].slice(1)}:</b> ${t.cielo.toLowerCase()}${t.lluvia ? `. Probabilidad de lluvia: ${t.lluvia} %` : ""}</div></div>${trend}</div>
+    <div class="wx-days">${next.map(d => `<div><span class="d">${DIAS_SEM[dObj(d.fecha).getDay()].slice(0, 3)}</span>${wxIcon(wxKind(d.cielo), 36)}<span class="t">${d.max}° <span>${d.min}°</span></span><span class="p">${d.lluvia ? d.lluvia + " %" : ""}</span></div>`).join("")}</div>
+    <p class="src">Previsión de <a href="${TI.fuente_url}" target="_blank" rel="noopener">AEMET</a> para ${TOWN}</p></section>`;
+}
+const CROSS = `<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path fill="var(--wx-cross)" d="M10 1h10v9h9v10h-9v9H10v-9H1V10h9z"/></svg>`;
+const telFmt = t => { const d = t.replace(/\D/g, ""); return d.length === 9 ? `${d.slice(0, 3)} ${d.slice(3, 5)} ${d.slice(5, 7)} ${d.slice(7)}` : t; };
+const telLink = t => `<a class="fm-tel" href="tel:${t.replace(/\D/g, "")}">${telFmt(t)}</a>`;
+const fmX = f => [f.titular, f.horario ? `de ${f.horario}` : "", telLink(f.tel)].filter(Boolean).join(" · ");
+function Pharmacies() {
+  if (!GU || !GU.dias || !GU.dias[HOY_REAL]) return "";
+  const g = GU.dias[HOY_REAL], d = dObj(HOY_REAL);
+  const night = g.noche.map(f => `<span class="n">${f.dir}</span><span class="x">${fmX(f)}</span>`).join("");
+  return `<section class="fm" aria-label="Farmacias de guardia"><p class="blk-label">Farmacias de guardia</p>
+    <span class="fm-day">Hoy, ${DIAS_SEM[d.getDay()]} ${d.getDate()}</span>
+    ${g.noche.length ? `<div class="fm-night">${CROSS}<span class="when">Noche · de ${GU.horario.noche}</span>${night}</div>` : ""}
+    ${g.dia.length ? `<p class="fm-h">De día · de ${GU.horario.dia}</p><ul class="fm-list">${g.dia.map(f => `<li><span class="n">${f.dir}</span><span class="x">${fmX(f)}</span></li>`).join("")}</ul>` : ""}
+    <p class="src">Fuente: <a href="${GU.fuente_url}" target="_blank" rel="noopener">${GU.fuente}</a></p></section>`;
+}
+const Utilities = () => { const w = Weather(), f = Pharmacies(); return w || f ? `<div class="ag-util">${w}${f}</div>` : ""; };
+const AgItem = x => `<li><span class="when">${x.cuando}</span>${x.noticia && byId[x.noticia] ? `<a class="que" href="#${x.noticia}">${x.que}</a>` : `<span class="que">${x.que}</span>`}<span class="where">${x.donde}</span></li>`;
+const AgList = () => { const first = AGENDA.slice(0, 9), rest = AGENDA.slice(9); return `<ul class="ag3">${first.map(AgItem).join("")}</ul>${rest.length ? `<details class="ag-more"><summary><span class="mas">Ver toda la agenda (${AGENDA.length} citas)</span><span class="menos">Ver menos</span></summary><ul class="ag3">${rest.map(AgItem).join("")}</ul></details>` : ""}`; };
+
+function front() {
+  const used = new Set();
+  const take = (list, n) => { const out = list.filter(a => !used.has(a.id)).slice(0, n); out.forEach(a => used.add(a.id)); return out; };
+  const news = ORDER.filter(a => a.sec !== "rio" && a.sec !== "opinion");
+  const [L] = take(news, 1);
+  // Jerarquía de la apertura: campo `peso` (2, 3 o 4 columnas de una rejilla de 4). Sin campo, 2.
+  const P = [3, 4].includes(L.peso) ? L.peso : 2;
+  const tags = new Set((L.seo && L.seo[3]) || []);
+  const relPool = Array.isArray(L.rel) ? L.rel.map(id => byId[id]).filter(Boolean)
+    : news.filter(a => a.id !== L.id && (a.sec === L.sec || ((a.seo && a.seo[3]) || []).some(t => tags.has(t))));
+  const REL = P === 2 ? [] : take(relPool, P === 3 ? 3 : 4);
+  const SEC = take(news, P === 3 ? 4 : 3);
+  setTicker(P === 4 ? L : null);
+  // Bloques de sección: siempre las dos noticias más recientes de cada sección (solo se excluye la apertura y sus relacionadas).
+  const heroIds = new Set([L.id, ...REL.map(a => a.id)]);
+  const BLOCKS = ["hermandades", "deportes", "cultura"].map(sec => [sec, news.filter(a => a.sec === sec && !heroIds.has(a.id)).slice(0, 2)]);
+  const [m0, ...m4] = take(news, 5);
+  const rio = ORDER.filter(a => a.sec === "rio").slice(0, 3);
+  const ops = ORDER.filter(a => a.sec === "opinion").slice(0, 4);
+  const shown = [L, ...REL, ...SEC, m0, ...m4].filter(Boolean);
+  const lst = arr => `<ol>${arr.slice(0, 5).map((a, i) => `<li><a href="#${a.id}"><span class="n">${i + 1}</span><span><b>${a.title}</b><span class="sec">${secName(a.sec)}</span></span></a></li>`).join("")}</ol>`;
+  const by = a => `<span class="byline"><b>${firmaOf(a)}</b></span>`;
+  const pairStory = a => `<div class="story"><a href="#${a.id}">${photo(a)}<span class="kicker">${a.kicker}</span><h3>${a.title}</h3></a>${by(a)}</div>`;
+  const mini = a => `<a class="mini" href="#${a.id}"><span><h3>${a.title}</h3><span class="sec">${secName(a.sec)}</span></span>${photo(a)}</a>`;
+  const opBox = ops.length ? `<section aria-labelledby="op-h"><h2 class="op-head" id="op-h"><a href="#opinion">Opinión</a></h2><div class="op-list">${ops.map(o => `<a class="op" href="#${o.id}"><span><span class="who">${o.autor}</span><h3>${o.title}</h3>${o.ficticia ? `<span class="fict">Texto de prueba · firma ficticia</span>` : ""}</span><span class="av" aria-hidden="true">${initials(o.autor)}</span></a>`).join("")}</div></section>` : "";
+  const rioCols = rio.length >= 3 ? "minmax(0,2fr) minmax(0,1fr) minmax(0,1fr)" : rio.length === 2 ? "minmax(0,2fr) minmax(0,1fr)" : "minmax(0,1fr)";
+  const rioHtml = rio.map((a, i) => i === 0
+    ? `<div class="story big"><a href="#${a.id}">${photo(a)}<span class="txt"><span class="kicker">${a.kicker}</span><h3>${a.title}</h3><p class="sub">${a.sub}</p></span></a></div>`
+    : `<div class="story"><a href="#${a.id}"><span class="kicker">${a.kicker}</span><h3>${a.title}</h3></a></div>`).join("");
+  const blocks = BLOCKS.filter(([, l]) => l.length).map(([sec, [b1, b2]]) => `<div class="blk"><p class="blk-label"><a href="#${sec}">${secName(sec)}</a></p>
+      <div class="story"><a href="#${b1.id}">${photo(b1)}<h3>${b1.title}</h3></a></div>
+      ${b2 ? `<a class="small" href="#${b2.id}"><h3>${b2.title}</h3>${photo(b2)}</a>` : ""}</div>`).join("");
+  const kick = a => `<span class="kicker">${a.kicker}</span>`;
+  const hora = a => a.hora ? `<span class="hora">${a.hora}</span>` : "";
+  const txtItem = a => `<a class="tx" href="#${a.id}">${hora(a) || kick(a)}<h3>${a.title}</h3></a>`;
+  const opNarrow = ops.slice(0, 3);
+  const opBox3 = opNarrow.length ? `<section aria-labelledby="op-h"><h2 class="op-head" id="op-h"><a href="#opinion">Opinión</a></h2><div class="op-list">${opNarrow.map(o => `<a class="op" href="#${o.id}"><span><span class="who">${o.autor}</span><h3>${o.title}</h3>${o.ficticia ? `<span class="fict">Texto de prueba · firma ficticia</span>` : ""}</span><span class="av" aria-hidden="true">${initials(o.autor)}</span></a>`).join("")}</div></section>` : "";
+  let top;
+  if (P === 2) {
+    const [a1, ...rest] = SEC;
+    top = `<section class="ft ft2">
+      <div class="c lead2"><a href="#${L.id}">${photo(L)}${kick(L)}<h2>${L.title}</h2></a><p class="sub">${L.sub}</p>${by(L)}</div>
+      <div class="c secs">${a1 ? `<a class="s1" href="#${a1.id}">${photo(a1)}${kick(a1)}<h3>${a1.title}</h3></a>` : ""}${rest.map(txtItem).join("")}</div>
+      <aside class="c side">${opBox3}${AD.family()}</aside>
+    </section>`;
+  } else if (P === 3) {
+    top = `<section class="ft ft3">
+      <div class="c lead3"><a class="hd" href="#${L.id}">${kick(L)}<h2>${L.title}</h2></a>
+        <div class="in"><a href="#${L.id}" aria-hidden="true" tabindex="-1">${photo(L)}</a>
+          <div class="tx3"><p class="sub">${L.sub}</p>${by(L)}${REL.map(r => `<a class="rl" href="#${r.id}">${r.title}</a>`).join("")}</div></div></div>
+      <aside class="c side">${opBox3}${AD.family()}</aside>
+    </section>
+    <section class="frow4">${SEC.map(txtItem).join("")}</section>`;
+  } else {
+    const op1 = ops[0];
+    top = `<section class="ft4">
+      <a class="hd" href="#${L.id}"><span class="kicker red">${L.kicker}</span><h2>${L.title}</h2></a>
+      <p class="sub">${L.sub}</p>
+      <span class="byline"><b>${firmaOf(L)}</b>${L.hora ? ` · Actualizado ${L.hora}` : ""}</span>
+      <a class="ph" href="#${L.id}" aria-hidden="true" tabindex="-1">${photo(L)}</a>
+      ${REL.length ? `<div class="frow4 follow">${REL.map(txtItem).join("")}</div>` : ""}
+    </section>
+    <section class="frow4">${SEC.map(txtItem).join("")}${op1 ? `<a class="tx op4" href="#${op1.id}"><span class="who">Opinión · ${op1.autor}</span><h3>${op1.title}</h3>${op1.ficticia ? `<span class="fict">Texto de prueba · firma ficticia</span>` : ""}</a>` : ""}</section>
+    ${AD.family("only-mob ad-infeed")}`;
+  }
+  return `<main class="fp">
+    ${top}
+    ${AD.mega()}
+    <section class="fp-row">
+      <div class="fp-main"><p class="blk-label">Actualidad</p>
+        ${m0 ? `<div class="act-main"><a class="ph" href="#${m0.id}" aria-hidden="true" tabindex="-1">${photo(m0)}</a><div class="story"><a href="#${m0.id}"><span class="kicker">${m0.kicker}</span><h3>${m0.title}</h3></a>${by(m0)}</div></div>` : ""}
+        <div class="act-list">${m4.map(mini).join("")}</div>
+      </div>
+      <aside class="fp-side"><div class="tabs">
+        <div role="tablist" aria-label="Listas"><button role="tab" aria-selected="true" aria-controls="tab-leido" id="t-leido">Lo más leído</button><button role="tab" aria-selected="false" aria-controls="tab-reciente" id="t-reciente">Reciente</button></div>
+        <div role="tabpanel" id="tab-leido" aria-labelledby="t-leido">${lst(shown)}</div>
+        <div role="tabpanel" id="tab-reciente" aria-labelledby="t-reciente" hidden>${lst(ORDER.filter(a => a.sec !== "opinion"))}</div>
+      </div></aside>
+    </section>
+    ${AD.tv("only-mob ad-infeed")}
+    ${rio.length ? `<section class="band" aria-labelledby="band-h"><div class="inner">
+      <div class="band-head"><h2 id="band-h"><a href="#rio">El Río</a></h2><p>El Guadalquivir y su orilla: el paseo, la barca, la pesca y las cucañas.</p></div>
+      <div class="rio3" style="grid-template-columns:${rioCols}">${rioHtml}</div>
+    </div></section>` : ""}
+    <section class="blocks">${blocks}</section>
+    <section class="fp-row">
+      <div class="fp-main"><p class="blk-label">Agenda de Coria</p>${AgList()}${Utilities()}</div>
+      <aside class="fp-side">${AD.halfpage()}${AD.tv("only-desk")}${AD.friend("only-mob")}</aside>
+    </section>
+  </main>`;
+}
+
+function latest() {
+  const list = ORDER.filter(a => a.sec !== "opinion");
+  return `<main class="front">
+    <div class="sec-head"><h1>Últimas noticias</h1><span class="sec-count">${list.length} noticias · últimos 30 días</span></div>
+    <div class="latest-list">${list.map(a => `<a class="mini" href="#${a.id}"><span><h3>${a.title}</h3><span class="sec">${secName(a.sec)} · <time datetime="${a.iso}">${a.date}</time></span></span>${photo(a)}</a>`).join("")}</div>
+    ${AD.mega()}
+  </main>`;
+}
+
+function section(sec) {
+  const name = secName(sec);
+  const list = ORDER.filter(a => a.sec === sec);
+  if (!list.length) return `<main class="front"><div class="sec-head"><h1>${name}</h1></div><p>Todavía no hay noticias en esta sección.</p></main>`;
+  if (sec === "opinion") return `<main class="front">
+    <div class="sec-head"><h1>${name}</h1><span class="sec-count">${list.length} ${list.length === 1 ? "columna" : "columnas"}</span></div>
+    <div class="op-box" style="max-width:740px">${list.map(o => `<a class="op" href="#${o.id}"><span class="av" aria-hidden="true">${initials(o.autor)}</span><span><span class="who">${o.autor}</span><h3>${o.title}</h3><p class="byline" style="margin:4px 0">${o.sub}</p><span class="byline">${o.date}</span>${o.ficticia ? ` <span class="fict">Texto de prueba · firma ficticia</span>` : ""}</span></a>`).join("")}</div>
+    ${AD.mega()}
+  </main>`;
+  const [first, ...more] = list;
+  const cards = more.map(a => card(a.id, { photo: true, sub: true }));
+  if (cards.length > 5) cards.splice(5, 0, AD.tv()); else cards.push(AD.tv());
+  return `<main class="front">
+    <div class="sec-head"><h1>${name}</h1><span class="sec-count">${list.length} ${list.length === 1 ? "noticia" : "noticias"} · últimos 30 días</span></div>
+    <section class="sec-lead">${card(first.id, { h: "h2", photo: true, sub: true })}</section>
+    ${AD.mega()}
+    <div class="sec-list">${cards.join("")}</div>
+  </main>`;
+}
+
+function article(a) {
+  const body = a.body.map(p => p.startsWith("<span class='howto'>") ? `<p class="howto">${p.replace(/^<span class='howto'>|<\/span>$/g, "")}</p>` : p.startsWith("## ") ? `<h3 class="ladillo">${p.slice(3)}</h3>` : `<p>${p}</p>`);
+  const rot = [AD.family, AD.tv, AD.friend][A.indexOf(a) % 3]();
+  const li = a.body.findIndex(p => p.startsWith("## ")); const pos = li > 1 ? li : 2;
+  if (body.length > pos) body.splice(pos, 0, rot); else body.push(rot);
+  const rel = ORDER.filter(x => x.id !== a.id && x.sec === a.sec).concat(ORDER.filter(x => x.id !== a.id && x.sec !== a.sec && x.sec !== "opinion")).slice(0, 3);
+  const claves = a.claves && a.claves.length ? `<aside class="claves" aria-label="Claves"><p class="section-label">Claves</p><ul>${a.claves.map(c => `<li>${c}</li>`).join("")}</ul></aside>` : "";
+  const fuente = a.fuente_url && !ownSrc(a) && extSrc(a) ? `<p class="fuente">Fuente original: <a href="${a.fuente_url}" target="_blank" rel="noopener">${extSrc(a)}</a></p>` : "";
+  if (a.sec === "opinion") return `<article class="full opinion-art">
+    <a class="back" href="#opinion">← Opinión</a>
+    ${a.ficticia ? `<span class="fict">Texto de prueba · firma ficticia</span>` : ""}
+    <span class="kicker">${a.kicker}</span>
+    <h1>${a.title}</h1>
+    <p class="sub">${a.sub}</p>
+    <div class="meta"><span class="firma"><span class="av" aria-hidden="true">${initials(a.autor)}</span><span><b>${a.autor}</b><span>${a.autor_cargo || ""}</span></span></span><span style="margin-left:auto">${a.date}${iaTag(a)}</span></div>
+    <div class="body">${body.join("")}</div>
+    ${seoBox(a)}
+  </article><div class="after-article">${AD.mega()}</div>`;
+  return `<article class="full">
+    <a class="back" href="#${a.sec}">← ${secName(a.sec)}</a>
+    <span class="kicker">${a.kicker}</span>
+    <h1>${a.title}</h1>
+    <p class="sub">${a.sub}</p>
+    <div class="meta"><b>${firmaOf(a)}</b><span>Coria del Río</span><span>${a.date}${iaTag(a)}</span></div>
+    <figure>${photo(a)}<figcaption>${a.caption}${credOf(a)}</figcaption></figure>
+    ${claves}
+    <div class="body">${body.join("")}</div>
+    ${fuente}
+    ${seoBox(a)}
+    <div class="related"><p class="section-label" style="margin:0">Más en El Coriano</p>
+      <ul>${rel.map(r => `<li><a href="#${r.id}"><span class="kicker">${r.kicker}</span><h3>${r.title}</h3></a></li>`).join("")}</ul>
+    </div>
+  </article><div class="after-article">${AD.mega()}</div>`;
+}
+
+function howWeWork() {
+  return `<article class="full"><a class="back" href="#portada">← Portada</a><span class="kicker">El Coriano</span><h1>Cómo trabajamos</h1>
+    <div class="body">
+    <p>El Coriano es el periódico digital de Coria del Río que edita Viva Studios. En él conviven dos formas de trabajo. Los periodistas de Viva Studios y de Coriavisión escriben y firman sus propias piezas. Además, una parte de la información se elabora con un sistema de inteligencia artificial a partir de fuentes públicas: notas del Ayuntamiento y de otras instituciones y boletines oficiales, que se citan y se enlazan en cada pieza. Cuando un hecho lo ha adelantado otro medio, primero se busca la nota o el documento oficial. Si no existe, solo se publica cuando al menos dos medios distintos lo han contado, y se redacta con información propia, sin copiar sus textos ni usar sus fotos. Lo que publica un solo medio y no se puede contrastar no se publica. Los reportajes de Coriavisión los hacen periodistas de Viva Studios y son información propia del periódico.</p>
+    <p>Todos los textos siguen las mismas normas: no se inventan datos, nombres ni declaraciones; las valoraciones se atribuyen a quien las hace; cuando dos fuentes no coinciden se cuenta, y lo que no se ha podido comprobar se deja fuera o se dice.</p>
+    <h3 class="ladillo">Qué significa cada firma</h3>
+    <p><b>«Elaborado con IA».</b> El texto lo ha redactado un sistema de inteligencia artificial y se ha publicado sin revisión humana previa.</p>
+    <p><b>«Elaborado con ayuda de IA».</b> Un periodista de la redacción ha revisado y comprobado el texto antes de publicarlo y asume la responsabilidad editorial.</p>
+    <p><b>Sin indicación.</b> La pieza la ha escrito un periodista de la redacción.</p>
+    <p>La indicación aparece en la línea de la firma de cada noticia, junto a la fecha. Así lo exige el artículo 50 del Reglamento europeo de Inteligencia Artificial para los textos que informan sobre asuntos de interés público.</p>
+    <h3 class="ladillo">Opinión y publicidad</h3>
+    <p>La sección de Opinión solo publica columnas firmadas por personas con nombre y apellidos. La publicidad de Vivamóvil se identifica siempre con el rótulo «Publicidad» y no condiciona la información.</p>
+    <p>Si detecta un error, escríbanos a redaccion@elcoriano.es y lo corregiremos.</p>
+    </div></article>`;
+}
+
+/* ===== Publicidad Vivamóvil ===== */
+const V = window.VMDATA, T = V.tarifas, PR = V.promos;
+const VM = V.fuente;
+const LOGO = "publi/logo-vivamovil.png";
+const ad = (cls, inner, extra = "", href = VM) => `<div class="ad-slot ${extra}"><span class="ad-label">Publicidad</span><a class="vm ${cls}" href="${href}" target="_blank" rel="sponsored noopener" aria-label="Anuncio de Vivamóvil">${inner}</a></div>`;
+const AD = {
+  leaderboard: () => ad("vm-lb", `<span class="logo-box"><img src="${LOGO}" alt="Vivamóvil"></span>
+    <span class="msg"><b>Fibra de ${T.basica.fibra} en Coria del Río</b><span>${T.basica.nombre} · ${T.basica.extras}</span></span>
+    <span class="price">${T.basica.precio}<small>€/mes</small></span><span class="cta">Consulta cobertura</span>`, "only-desk", T.basica.url),
+  mobileTop: () => ad("vm-mb", `<span class="left"><img src="${LOGO}" alt="Vivamóvil"><b>Fibra ${T.basica.fibra} con alta gratis</b></span>
+    <span class="right"><span class="price">${T.basica.precio}<small>€</small></span><span>al mes</span></span>`, "only-mob", T.basica.url),
+  family: (extra = "") => ad("vm-mr", `<span class="logo-box"><img src="${LOGO}" alt="Vivamóvil"></span>
+    <span class="body"><span class="eyebrow">${T.family.nombre}</span><h4>Todo en casa con una sola factura</h4>
+    <ul><li>Fibra + ${T.family.tv}</li><li>${T.family.lineas}</li><li>${T.family.datos}</li></ul>
+    <span class="row"><span class="price">${T.family.precio}<small>€/mes</small></span><span class="cta">Lo quiero</span></span></span>`, extra, T.family.url),
+  tv: (extra = "") => ad("vm-mr vm-tv", `<span class="logo-box"><img src="${LOGO}" alt="Vivamóvil"></span>
+    <span class="body"><span class="eyebrow">Televisión local</span><h4>Mira Coriavisión solo con Vivamóvil</h4>
+    <span class="chan">${PR.canales_locales.map(c => `<span>${c}</span>`).join("")}</span>
+    <span class="row"><span class="fine">Plenos, hermandades, deporte y toda la actualidad de Coria</span><span class="cta">Contratar TV</span></span></span>`, extra, PR.coriavision_url),
+  friend: (extra = "") => ad("vm-mr vm-friend", `<span class="logo-box"><img src="${LOGO}" alt="Vivamóvil"></span>
+    <span class="body"><span class="eyebrow">Plan Amigo</span><span class="big">${PR.amigo.total_meses} meses</span><h4>gratis por traer a un amigo</h4>
+    <ul><li>${PR.amigo.meses_cliente} meses para ti y ${PR.amigo.meses_amigo} para él</li></ul>
+    <span class="row"><span class="fine">Consulta condiciones</span><span class="cta">Infórmate</span></span></span>`, extra),
+  halfpage: () => ad("vm-hp", `<span class="logo-box"><img src="${LOGO}" alt="Vivamóvil"></span>
+    <span class="body"><span class="eyebrow">${T.tandem.nombre}</span><h4>Fibra y dos móviles para la pareja</h4>
+    <ul><li>${T.tandem.lineas}</li><li>${T.tandem.datos}</li><li>${T.tandem.tv}</li><li>Alta y cuota de línea gratis</li></ul>
+    <span class="price">${T.tandem.precio}<small>€/mes</small></span><span class="cta">Llama gratis al ${V.telefono}</span>
+    <span class="office">Oficina de Coria del Río: ${V.oficina_coria}</span>
+    <span class="fine">${V.condiciones}</span></span>`, "only-desk", T.tandem.url),
+  mega: () => `<div class="ad-mega">${AD.leaderboard()}${AD.mobileTop()}</div>`,
+  sticky: () => `<a class="vm vm-an" href="${T.basica.url}" target="_blank" rel="sponsored noopener" aria-label="Anuncio de Vivamóvil"><span class="logo-box"><img src="${LOGO}" alt="Vivamóvil"></span>
+    <span class="msg"><b>Fibra desde ${T.basica.precio} €/mes</b><span>Llama gratis: ${V.telefono}</span></span><span class="cta">Ver</span></a>`
+};
+function mountStaticAds() {
+  const st = document.getElementById("ad-sticky");
+  let closed = false; try { closed = sessionStorage.getItem("vm-sticky") === "0"; } catch (e) {}
+  if (closed) return;
+  st.innerHTML = `<button class="close" type="button" aria-label="Cerrar anuncio">×</button><span class="ad-label" style="position:absolute;left:max(16px, env(safe-area-inset-left, 0px));top:-18px;background:var(--paper);padding:2px 6px">Publicidad</span>${AD.sticky()}`;
+  st.classList.add("on");
+  st.querySelector(".close").addEventListener("click", () => { st.classList.remove("on"); st.innerHTML = ""; try { sessionStorage.setItem("vm-sticky", "0"); } catch (e) {} });
+}
+const sky = (cls, ph, alt, inner, href = VM) => `<span class="ad-label">Publicidad</span><div class="sky-wrap"><a class="vm vm-sky ${cls}" href="${href}" target="_blank" rel="sponsored noopener" aria-label="Anuncio de Vivamóvil"><span class="logo-box"><img src="${LOGO}" alt="Vivamóvil"></span><span class="pic"><img src="publi/fotos-vm/${ph}.jpg" alt="${alt}"></span><span class="txt">${inner}</span></a></div>`;
+const RAILS = {
+  left: [
+    () => sky("", "chico", "Cliente de Vivamóvil con su móvil", `<span class="eyebrow">${T.tandem.nombre}</span><h4>Fibra y dos móviles ilimitados</h4><p>${T.tandem.datos} y ${T.tandem.tv}</p><span class="price">${T.tandem.precio}<small>€/mes</small></span><span class="cta">Lo quiero</span>`, T.tandem.url),
+    () => sky("lime", "promo-amigo", "Dos clientes de Vivamóvil", `<span class="eyebrow">Plan Amigo</span><h4>${PR.amigo.total_meses} meses gratis entre los dos</h4><p>Trae a un amigo: ${PR.amigo.meses_cliente} meses para ti y ${PR.amigo.meses_amigo} para él</p><span class="cta" style="margin-top:auto">Infórmate</span>`)
+  ],
+  right: [
+    () => sky("", "presentadores", "Presentadores de las televisiones locales de Vivamóvil", `<span class="eyebrow">Coriavisión</span><h4>La tele de Coria, solo en Vivamóvil</h4><p>Con ${T.family.nombre}: fibra, ${T.family.tv} y móviles ilimitados</p><span class="price">${T.family.precio}<small>€/mes</small></span><span class="cta">Ver tarifa</span>`, PR.coriavision_url),
+    () => sky("white", "xiaomi", "Productos Xiaomi", `<span class="eyebrow">Regala Xiaomi</span><h4>Un ${PR.xiaomi.descuento} de descuento para clientes</h4><p>Móviles, robots aspiradores, patinetes y más</p><span class="cta" style="margin-top:auto">Ver catálogo</span>`)
+  ]
+};
+let railTurn = 0;
+function mountRails() {
+  const i = railTurn++ % 2;
+  document.getElementById("rail-l").innerHTML = RAILS.left[i]();
+  document.getElementById("rail-r").innerHTML = RAILS.right[i]();
+  fitRails();
+}
+// Laterales 450x1000 anclados justo debajo de la línea de secciones; se escalan si no caben y se ocultan si el hueco es menor de 160 px.
+const SKY_W = 450, SKY_H = 1000, COL = 1180, GAP = 24;
+function fitRails() {
+  const vw = document.documentElement.clientWidth, vh = window.innerHeight;
+  const side = (vw - COL) / 2 - GAP * 2;
+  const nav = document.querySelector("nav.sections").getBoundingClientRect();
+  const top = Math.max(nav.bottom, 0) + 14;
+  const w = Math.min(SKY_W, side, (vh - top - 34) * SKY_W / SKY_H);
+  ["rail-l", "rail-r"].forEach(id => {
+    const el = document.getElementById(id);
+    if (w < 160) { el.classList.remove("on"); return; }
+    el.classList.add("on");
+    const s = w / SKY_W, wrap = el.querySelector(".sky-wrap"), a = el.querySelector(".vm-sky");
+    wrap.style.width = w + "px"; wrap.style.height = SKY_H * s + "px";
+    a.style.transform = `scale(${s})`;
+    el.style[id === "rail-l" ? "left" : "right"] = `calc(50% - ${COL / 2 + GAP}px - ${w}px)`;
+    el.style.top = top + "px";
+  });
+}
+window.addEventListener("resize", fitRails);
+window.addEventListener("scroll", fitRails, { passive: true });
+
+function render() {
+  /* La Mesa solo funciona dentro de Claude */
+  const h = (location.hash || "#portada").slice(1);
+  const app = document.getElementById("app");
+  let current = "portada";
+  if (h === "como-trabajamos") { app.innerHTML = howWeWork(); applySeo(null, "Cómo trabajamos | El Coriano"); current = ""; }
+  else if (byId[h]) { app.innerHTML = article(byId[h]); current = byId[h].sec; applySeo(byId[h]); }
+  else if (h === "ultimas") { app.innerHTML = latest(); current = "ultimas"; applySeo(null, "Últimas noticias de Coria del Río | El Coriano"); }
+  else if (SECTIONS.some(s => s[0] === h) && h !== "portada") { app.innerHTML = section(h); current = h; applySeo(null, `${secName(h)} en Coria del Río | El Coriano`); }
+  else { app.innerHTML = front(); applySeo(null); }
+  document.getElementById("nav").innerHTML = SECTIONS.map(([id, n]) => `<a href="#${id}" ${id === current ? 'aria-current="page"' : ""}>${n}</a>`).join("") + `<a class="latest" href="#ultimas" ${current === "ultimas" ? 'aria-current="page"' : ""}>Últimas noticias</a>`;
+  document.getElementById("ticker-bar").hidden = current !== "portada";
+  mountRails();
+  window.scrollTo(0, 0);
+}
+// «Hoy es noticia»: temas concretos. Campo opcional `tema`; si falta, la primera etiqueta SEO.
+const temaOf = a => a.tema || (a.seo && a.seo[3] && a.seo[3][0]) || a.kicker;
+// Con una apertura de peso 4 y el campo `ultima_hora` ({hora, texto}), el cintillo «Última hora» sustituye a «Hoy es noticia».
+function setTicker(L) {
+  const t = document.getElementById("ticker"), bar = document.getElementById("ticker-bar");
+  const u = L && L.ultima_hora;
+  bar.classList.toggle("breaking", !!u);
+  t.innerHTML = u ? `<b class="uh">Última hora</b>${u.hora ? `<span class="uh-h">${u.hora}</span>` : ""}<a href="#${L.id}">${u.texto}</a>`
+    : `<b>Hoy es noticia</b>` + ORDER.filter(a => a.sec !== "opinion").filter((a, i, arr) => arr.findIndex(x => temaOf(x) === temaOf(a)) === i).slice(0, 7).map(a => `<a href="#${a.id}">${temaOf(a)}</a>`).join("");
+}
+setTicker(null);
+document.getElementById("app").addEventListener("click", e => {
+  const b = e.target.closest('.tabs [role="tab"]'); if (!b) return;
+  const box = b.closest(".tabs");
+  box.querySelectorAll('[role="tab"]').forEach(t => { const on = t === b; t.setAttribute("aria-selected", on); box.querySelector("#" + t.getAttribute("aria-controls")).hidden = !on; });
+});
+window.addEventListener("hashchange", render);
+document.getElementById("today").textContent = (() => { const [y, m, d] = HOY.split("-").map(Number); const t = new Date(y, m - 1, d).toLocaleDateString("es-ES", { weekday: "long", day: "numeric", month: "long", year: "numeric" }); return t.charAt(0).toUpperCase() + t.slice(1); })();
+mountStaticAds();
+render();
+</script>
+
+</body></html>
